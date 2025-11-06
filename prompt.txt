@@ -1,0 +1,73 @@
+
+ollama pull codegemma:7b
+python main.py --model codegemma:7b  --verify > codegemma.txt
+ollama rm codegemma:7b
+
+ollama pull codeqwen
+python main.py --model codeqwen  --verify > codeqwen.txt
+ollama rm codeqwen
+
+ollama pull mistral-nemo
+python main.py --model mistral-nemo  --verify > mistral_nemo.txt
+ollama rm mistral-nemo
+
+ollama pull qwen3:14b
+python main.py --model qwen3:14b  --verify > qwen3.txt
+ollama rm qwen3:14b
+
+ollama pull llama3.1:8b
+python main.py --model llama3.1:8b  --verify > llama.txt
+ollama rm llama3.1:8b
+
+ollama pull gemma3:12b
+python main.py --model gemma3:12b  --verify > gemma.txt
+ollama rm gemma3:12b
+
+ollama pull dolphincoder:15b
+python main.py --model dolphincoder:15b  --verify > dolphin.txt
+ollama rm dolphincoder:15b
+
+ollama pull mistral
+python main.py --model mistral  --verify > mistral.txt
+ollama rm mistral
+
+ollama pull qwen2.5-coder:7b
+python main.py --model qwen2.5-coder:7b  --verify > qwen2_5coder.txt
+ollama rm qwen2.5-coder:7b
+
+ollama pull falcon3:10b
+python main.py --model falcon3:10b  --verify > falcon.txt
+ollama rm falcon3:10b
+
+ollama pull granite-code:8b
+python main.py --model granite-code:8b  --verify > granite.txt
+ollama rm granite-code:8b
+
+ollama pull yi-coder:9b
+python main.py --model yi-coder:9b  --verify > yi_coder.txt
+ollama rm yi-coder:9b
+
+ollama pull deepcoder:14b
+python main.py --model codeqwen  --verify > deepcoder_14b.txt
+ollama rm deepcoder:14b
+
+ollama pull opencoder:8b
+python main.py --model opencoder:8b  --verify > opencoder_8b.txt
+ollama rm opencoder:8b
+
+ollama pull deepseek-r1:14b
+python main.py --model deepseek-r1:14b  --verify > deepseek_r1.txt
+ollama rm deepseek-r1:14b
+
+ollama pull deepseek-coder-v2
+python main.py --model deepseek-coder-v2  --verify > deepseek_coder.txt
+ollama rm deepseek-coder-v2
+
+ollama pull qwen3:14b
+python main.py --model qwen3:14b  --verify > qwen3.txt
+ollama rm qwen3:14b
+
+ollama pull starcoder2:15b
+python main.py --model starcoder2:15b  --verify > starcoder.txt
+ollama rm starcoder2:15b
+

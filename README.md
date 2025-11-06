@@ -1,0 +1,2 @@
+# REMODEL-LLM-Refactoring-and-Modernizing-Existing-Legacy-Code-using-Quantized-LLMs
+REMODEL-LLM is context-aware C-to-Java translation pipeline that combines static AST analysis with LLM-based reasoning. It extracts program structure using pycparser, builds enriched prompts, and generates semantically consistent Java code via Ollama models, ensuring correctness through execution-level verification.

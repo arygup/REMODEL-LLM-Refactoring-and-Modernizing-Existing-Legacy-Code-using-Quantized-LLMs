@@ -1,0 +1,385 @@
+Logging run to: ./logs/2025-11-06_12-06-30
+Warning: Could not connect to Ollama. Is it running? Error: KeyError: 'name'
+Starting pipeline: ./C_repo -> ./Java_repo_opencoder:8b
+Output directory created/ensured at: ./Java_repo_opencoder:8b
+
+Processing file: ./C_repo/test_16.c
+  > Translating global variable...
+  > Translating function 'increment_global'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_16.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_16.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_16.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_16
+Caused by: java.lang.ClassNotFoundException: Test_16
+
+
+Processing file: ./C_repo/test_18.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_18.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_18.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_18.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_opencoder:8b/Test_18.java:28: error: cannot find symbol
+        System.out.println("Size of Data: " + sizeof_Data());
+                                              ^
+  symbol:   method sizeof_Data()
+  location: class Test_18
+./Java_repo_opencoder:8b/Test_18.java:29: error: cannot find symbol
+        System.out.println("Size of Data*: " + Pointer.SIZE);
+                                               ^
+  symbol:   variable Pointer
+  location: class Test_18
+2 errors
+
+
+Processing file: ./C_repo/test_5.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_5.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_5.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_5.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_5
+Caused by: java.lang.ClassNotFoundException: Test_5
+
+
+Processing file: ./C_repo/test_17.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_17.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_17.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_17.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_17
+Caused by: java.lang.ClassNotFoundException: Test_17
+
+
+Processing file: ./C_repo/test_20.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_20.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_20.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_20.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_20
+Caused by: java.lang.ClassNotFoundException: Test_20
+
+
+Processing file: ./C_repo/test_9.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'printGeneric'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_9.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_9.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_9.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_opencoder:8b/Test_9.java:52: error: method main(String[]) is already defined in class Test_9
+    public static void main(String[] args) {
+                       ^
+./Java_repo_opencoder:8b/Test_9.java:43: error: cannot find symbol
+                    System.out.println("TypeA: " + a.getValue());
+                                                    ^
+  symbol:   method getValue()
+  location: variable a of type TypeA
+./Java_repo_opencoder:8b/Test_9.java:47: error: cannot find symbol
+                    System.out.println("TypeB: " + b.getValue());
+                                                    ^
+  symbol:   method getValue()
+  location: variable b of type TypeB
+3 errors
+
+
+Processing file: ./C_repo/test_12.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_12.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_12.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_12.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_12
+Caused by: java.lang.ClassNotFoundException: Test_12
+
+
+Processing file: ./C_repo/test_2.c
+  > Translating struct...
+  > Translating function 'move'...
+  > Translating function 'move_copy'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_2.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_2.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_2.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_opencoder:8b/Test_2.java:38: error: cannot find symbol
+    public static void main(String[] args) throws IOException {
+                                                  ^
+  symbol:   class IOException
+  location: class Test_2
+./Java_repo_opencoder:8b/Test_2.java:43: error: cannot find symbol
+            InputStream inStream = System.in;
+            ^
+  symbol:   class InputStream
+  location: class Test_2
+./Java_repo_opencoder:8b/Test_2.java:44: error: cannot find symbol
+            OutputStream outStream = System.out;
+            ^
+  symbol:   class OutputStream
+  location: class Test_2
+3 errors
+
+
+Processing file: ./C_repo/test_3.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_3.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_3.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_3.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_opencoder:8b/Test_3.java:13: error: cannot find symbol
+        Point p_val_orig = new Point(100, 200);
+        ^
+  symbol:   class Point
+  location: class Test_3
+./Java_repo_opencoder:8b/Test_3.java:13: error: cannot find symbol
+        Point p_val_orig = new Point(100, 200);
+                               ^
+  symbol:   class Point
+  location: class Test_3
+2 errors
+
+
+Processing file: ./C_repo/test_4.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_4.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_4.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_4.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_4
+Caused by: java.lang.ClassNotFoundException: Test_4
+
+
+Processing file: ./C_repo/test_13.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_13.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_13.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_13.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_13
+Caused by: java.lang.ClassNotFoundException: Test_13
+
+
+Processing file: ./C_repo/test_15.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_15.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_15.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_15.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_opencoder:8b/Test_15.java:33: error: incompatible types: unexpected return value
+        return 0;
+               ^
+1 error
+
+
+Processing file: ./C_repo/test_19.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_19.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_19.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_19.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_opencoder:8b/Test_19.java:34: error: cannot find symbol
+                this.name = Arrays.copyOf(other.name, 20);
+                            ^
+  symbol:   variable Arrays
+  location: class Outer
+./Java_repo_opencoder:8b/Test_19.java:45: error: cannot find symbol
+            structOuter o = new structOuter();
+            ^
+  symbol:   class structOuter
+  location: class Test_19
+./Java_repo_opencoder:8b/Test_19.java:45: error: cannot find symbol
+            structOuter o = new structOuter();
+                                ^
+  symbol:   class structOuter
+  location: class Test_19
+./Java_repo_opencoder:8b/Test_19.java:46: error: cannot find symbol
+            o.inner_data = new structInner();
+                               ^
+  symbol:   class structInner
+  location: class Test_19
+4 errors
+
+
+Processing file: ./C_repo/test_6.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_6.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_6.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_6.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_opencoder:8b/Test_6.java:8: error: undefined label: do_while_loop
+            break do_while_loop; // Instead of using goto, we use the 'do-while loop' to perform cleanup actions.
+            ^
+1 error
+
+
+Processing file: ./C_repo/test_10.c
+  > Translating function 'createInt'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_10.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_10.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_10.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_opencoder:8b/Test_10.java:13: error: incompatible types: Integer cannot be converted to Integer[]
+        createInt(myIntPtr);
+                  ^
+./Java_repo_opencoder:8b/Test_10.java:16: error: cannot find symbol
+            free(myIntPtr);
+            ^
+  symbol:   method free(Integer)
+  location: class Test_10
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+
+Processing file: ./C_repo/test_14.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_14.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_14.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_14.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_14
+Caused by: java.lang.ClassNotFoundException: Test_14
+
+
+Processing file: ./C_repo/test_7.c
+  > Translating function 'add'...
+  > Translating function 'subtract'...
+  > Translating function 'calculate'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_7.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_7.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_7.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_opencoder:8b/Test_7.java:11: error: cannot find symbol
+    public static int calculate(int x, int y, IntBinaryOperator op) {
+                                              ^
+  symbol:   class IntBinaryOperator
+  location: class Test_7
+./Java_repo_opencoder:8b/Test_7.java:16: error: cannot find symbol
+            BiFunction<Integer, Integer, Integer> addPtr = Main::add;
+            ^
+  symbol:   class BiFunction
+  location: class Test_7
+2 errors
+
+
+Processing file: ./C_repo/test_1.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_1.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_1.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_1.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_1
+Caused by: java.lang.ClassNotFoundException: Test_1
+
+
+Processing file: ./C_repo/test_8.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_8.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_8.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_8.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_opencoder:8b/Test_8.java:26: error: cannot assign a value to final variable data
+            data = (data & mask) | ((a ? 1 : 0) << 13);
+            ^
+./Java_repo_opencoder:8b/Test_8.java:35: error: cannot assign a value to final variable data
+            data = (data & mask) | (b << 10);
+            ^
+./Java_repo_opencoder:8b/Test_8.java:44: error: cannot assign a value to final variable data
+            data = (data & mask) | (c & 0x7F);
+            ^
+./Java_repo_opencoder:8b/Test_8.java:49: error: no suitable constructor found for Flags(no arguments)
+        Flags f = new Flags();
+                  ^
+    constructor Flags.Flags(int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor Flags.Flags(Flags) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor Flags.Flags(boolean,int,int) is not applicable
+      (actual and formal argument lists differ in length)
+./Java_repo_opencoder:8b/Test_8.java:50: error: cannot find symbol
+        f.a = 1;
+         ^
+  symbol:   variable a
+  location: variable f of type Flags
+./Java_repo_opencoder:8b/Test_8.java:51: error: cannot find symbol
+        f.b = 5;
+         ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_opencoder:8b/Test_8.java:52: error: cannot find symbol
+        f.c = 100;
+         ^
+  symbol:   variable c
+  location: variable f of type Flags
+./Java_repo_opencoder:8b/Test_8.java:53: error: cannot find symbol
+        System.out.printf("Flag a: %u\n", f.a);
+                                           ^
+  symbol:   variable a
+  location: variable f of type Flags
+./Java_repo_opencoder:8b/Test_8.java:54: error: cannot find symbol
+        System.out.printf("Flag b: %u\n", f.b);
+                                           ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_opencoder:8b/Test_8.java:55: error: cannot find symbol
+        System.out.printf("Flag c: %u\n", f.c);
+                                           ^
+  symbol:   variable c
+  location: variable f of type Flags
+./Java_repo_opencoder:8b/Test_8.java:56: error: cannot find symbol
+        f.b = 10;
+         ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_opencoder:8b/Test_8.java:57: error: cannot find symbol
+        System.out.printf("Flag b (overflow): %u\n", f.b & 0xFFFFFFFFL); // Masking overflow
+                                                      ^
+  symbol:   variable b
+  location: variable f of type Flags
+12 errors
+
+
+Processing file: ./C_repo/test_11.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_opencoder:8b/Test_11.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_11.c
+  > Compiling and running translated Java: ./Java_repo_opencoder:8b/Test_11.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_opencoder:8b/Test_11.java:4: error: incompatible types: possible lossy conversion from int to byte
+        byte c = 200;
+                 ^
+1 error
+
+Pipeline finished.

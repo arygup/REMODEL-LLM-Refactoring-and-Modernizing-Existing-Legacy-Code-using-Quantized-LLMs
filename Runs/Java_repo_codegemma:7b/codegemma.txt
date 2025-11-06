@@ -1,0 +1,360 @@
+Logging run to: ./logs/2025-11-05_23-08-08
+Warning: Could not connect to Ollama. Is it running? Error: KeyError: 'name'
+Starting pipeline: ./C_repo -> ./Java_repo_codegemma:7b
+Output directory created/ensured at: ./Java_repo_codegemma:7b
+
+Processing file: ./C_repo/test_16.c
+  > Translating global variable...
+  > Translating function 'increment_global'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_16.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_16.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_16.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codegemma:7b/Test_16.java:9: error: method increment_global() is already defined in class Test_16
+    public static void increment_global() {
+                       ^
+1 error
+
+
+Processing file: ./C_repo/test_18.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_18.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_18.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_18.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codegemma:7b/Test_18.java:25: error: cannot find symbol
+            System.out.println("Size of Data: " + new Data().getSize());
+                                                            ^
+  symbol:   method getSize()
+  location: class Data
+1 error
+
+
+Processing file: ./C_repo/test_5.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_5.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_5.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_5.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codegemma:7b/Test_5.java:4: error: not a statement
+            unsigned int u_val = 4294967295L;
+            ^
+./Java_repo_codegemma:7b/Test_5.java:4: error: ';' expected
+            unsigned int u_val = 4294967295L;
+                    ^
+2 errors
+
+
+Processing file: ./C_repo/test_17.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_17.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_17.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_17.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_17
+Caused by: java.lang.ClassNotFoundException: Test_17
+
+
+Processing file: ./C_repo/test_20.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_20.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_20.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_20.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_20
+Caused by: java.lang.ClassNotFoundException: Test_20
+
+
+Processing file: ./C_repo/test_9.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'printGeneric'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_9.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_9.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_9.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_9
+Caused by: java.lang.ClassNotFoundException: Test_9
+
+
+Processing file: ./C_repo/test_12.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_12.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_12.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_12.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_12
+Caused by: java.lang.ClassNotFoundException: Test_12
+
+
+Processing file: ./C_repo/test_2.c
+  > Translating struct...
+  > Translating function 'move'...
+  > Translating function 'move_copy'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_2.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_2.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_2.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_2
+Caused by: java.lang.ClassNotFoundException: Test_2
+
+
+Processing file: ./C_repo/test_3.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_3.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_3.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_3.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codegemma:7b/Test_3.java:4: error: not a statement
+            union {
+            ^
+./Java_repo_codegemma:7b/Test_3.java:4: error: ';' expected
+            union {
+                 ^
+./Java_repo_codegemma:7b/Test_3.java:7: error: not a statement
+            } c;
+              ^
+3 errors
+
+
+Processing file: ./C_repo/test_4.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_4.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_4.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_4.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_4
+Caused by: java.lang.ClassNotFoundException: Test_4
+
+
+Processing file: ./C_repo/test_13.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_13.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_13.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_13.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_13
+Caused by: java.lang.ClassNotFoundException: Test_13
+
+
+Processing file: ./C_repo/test_15.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_15.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_15.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_15.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codegemma:7b/Test_15.java:30: error: cannot find symbol
+            free(itemPtr);
+            ^
+  symbol:   method free(Item)
+  location: class Test_15
+1 error
+
+
+Processing file: ./C_repo/test_19.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_19.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_19.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_19.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_19
+Caused by: java.lang.ClassNotFoundException: Test_19
+
+
+Processing file: ./C_repo/test_6.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_6.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_6.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_6.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codegemma:7b/Test_6.java:6: error: incompatible types: int cannot be converted to boolean
+            if (error) {
+                ^
+1 error
+
+
+Processing file: ./C_repo/test_10.c
+  > Translating function 'createInt'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_10.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_10.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_10.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codegemma:7b/Test_10.java:10: error: incompatible types: int cannot be converted to int[]
+        createInt(myIntPtr);
+                  ^
+./Java_repo_codegemma:7b/Test_10.java:13: error: cannot find symbol
+          free(myIntPtr);
+          ^
+  symbol:   method free(int)
+  location: class Test_10
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+
+Processing file: ./C_repo/test_14.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_14.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_14.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_14.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_14
+Caused by: java.lang.ClassNotFoundException: Test_14
+
+
+Processing file: ./C_repo/test_7.c
+  > Translating function 'add'...
+  > Translating function 'subtract'...
+  > Translating function 'calculate'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_7.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_7.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_7.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codegemma:7b/Test_7.java:23: error: <identifier> expected
+      public static int calculate(int a, int b, int (*func)(int, int)) {
+                                                   ^
+./Java_repo_codegemma:7b/Test_7.java:23: error: <identifier> expected
+      public static int calculate(int a, int b, int (*func)(int, int)) {
+                                                               ^
+./Java_repo_codegemma:7b/Test_7.java:23: error: <identifier> expected
+      public static int calculate(int a, int b, int (*func)(int, int)) {
+                                                                ^
+./Java_repo_codegemma:7b/Test_7.java:23: error: <identifier> expected
+      public static int calculate(int a, int b, int (*func)(int, int)) {
+                                                                    ^
+./Java_repo_codegemma:7b/Test_7.java:28: error: not a statement
+        int (*add_ptr)(int, int) = &add;
+        ^
+./Java_repo_codegemma:7b/Test_7.java:28: error: ';' expected
+        int (*add_ptr)(int, int) = &add;
+           ^
+./Java_repo_codegemma:7b/Test_7.java:28: error: not a statement
+        int (*add_ptr)(int, int) = &add;
+              ^
+./Java_repo_codegemma:7b/Test_7.java:28: error: ';' expected
+        int (*add_ptr)(int, int) = &add;
+                     ^
+./Java_repo_codegemma:7b/Test_7.java:28: error: not a statement
+        int (*add_ptr)(int, int) = &add;
+                       ^
+./Java_repo_codegemma:7b/Test_7.java:28: error: ';' expected
+        int (*add_ptr)(int, int) = &add;
+                          ^
+./Java_repo_codegemma:7b/Test_7.java:28: error: not a statement
+        int (*add_ptr)(int, int) = &add;
+                            ^
+./Java_repo_codegemma:7b/Test_7.java:28: error: ';' expected
+        int (*add_ptr)(int, int) = &add;
+                               ^
+./Java_repo_codegemma:7b/Test_7.java:28: error: not a statement
+        int (*add_ptr)(int, int) = &add;
+                                    ^
+./Java_repo_codegemma:7b/Test_7.java:30: error: illegal start of expression
+        System.out.println("Subtract: " + calculate(10, 5, &subtract));
+                                                           ^
+14 errors
+
+
+Processing file: ./C_repo/test_1.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_1.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_1.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_1.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_1
+Caused by: java.lang.ClassNotFoundException: Test_1
+
+
+Processing file: ./C_repo/test_8.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_8.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_8.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_8.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codegemma:7b/Test_8.java:46: error: cannot find symbol
+            f.a = 1;
+             ^
+  symbol:   variable a
+  location: variable f of type Flags
+./Java_repo_codegemma:7b/Test_8.java:47: error: cannot find symbol
+            f.b = 5;
+             ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_codegemma:7b/Test_8.java:48: error: cannot find symbol
+            f.c = 100;
+             ^
+  symbol:   variable c
+  location: variable f of type Flags
+./Java_repo_codegemma:7b/Test_8.java:49: error: cannot find symbol
+            System.out.println("Flag a: " + f.a);
+                                             ^
+  symbol:   variable a
+  location: variable f of type Flags
+./Java_repo_codegemma:7b/Test_8.java:50: error: cannot find symbol
+            System.out.println("Flag b: " + f.b);
+                                             ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_codegemma:7b/Test_8.java:51: error: cannot find symbol
+            System.out.println("Flag c: " + f.c);
+                                             ^
+  symbol:   variable c
+  location: variable f of type Flags
+./Java_repo_codegemma:7b/Test_8.java:52: error: cannot find symbol
+            f.b = 10;
+             ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_codegemma:7b/Test_8.java:53: error: cannot find symbol
+            System.out.println("Flag b (overflow): " + f.b);
+                                                        ^
+  symbol:   variable b
+  location: variable f of type Flags
+8 errors
+
+
+Processing file: ./C_repo/test_11.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codegemma:7b/Test_11.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_11.c
+  > Compiling and running translated Java: ./Java_repo_codegemma:7b/Test_11.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codegemma:7b/Test_11.java:4: error: not a statement
+        unsigned char c = 200;
+        ^
+./Java_repo_codegemma:7b/Test_11.java:4: error: ';' expected
+        unsigned char c = 200;
+                ^
+2 errors
+
+Pipeline finished.

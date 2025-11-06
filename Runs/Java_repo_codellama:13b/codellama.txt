@@ -1,0 +1,626 @@
+Logging run to: ./logs/2025-11-05_22-45-15
+Warning: Could not connect to Ollama. Is it running? Error: KeyError: 'name'
+Starting pipeline: ./C_repo -> ./Java_repo_codellama:13b
+Output directory created/ensured at: ./Java_repo_codellama:13b
+
+Processing file: ./C_repo/test_16.c
+  > Translating global variable...
+  > Translating function 'increment_global'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_16.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_16.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_16.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_16
+Caused by: java.lang.ClassNotFoundException: Test_16
+
+
+Processing file: ./C_repo/test_18.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_18.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_18.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_18.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_18
+Caused by: java.lang.ClassNotFoundException: Test_18
+
+
+Processing file: ./C_repo/test_5.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_5.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_5.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_5.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codellama:13b/Test_5.java:3: error: unclosed string literal
+    public static void main(String[] args) {"
+                                            ^
+./Java_repo_codellama:13b/Test_5.java:5: error: illegal character: '#'
+        # Iterate through each line of the C function
+        ^
+./Java_repo_codellama:13b/Test_5.java:5: error: ';' expected
+        # Iterate through each line of the C function
+                         ^
+./Java_repo_codellama:13b/Test_5.java:5: error: ';' expected
+        # Iterate through each line of the C function
+                                   ^
+./Java_repo_codellama:13b/Test_5.java:5: error: ';' expected
+        # Iterate through each line of the C function
+                                          ^
+./Java_repo_codellama:13b/Test_5.java:5: error: ';' expected
+        # Iterate through each line of the C function
+                                                     ^
+./Java_repo_codellama:13b/Test_5.java:6: error: '(' expected
+        for line in lines:
+           ^
+./Java_repo_codellama:13b/Test_5.java:6: error: ';' expected
+        for line in lines:
+                   ^
+./Java_repo_codellama:13b/Test_5.java:6: error: ';' expected
+        for line in lines:
+                         ^
+./Java_repo_codellama:13b/Test_5.java:7: error: illegal character: '#'
+            # Check if the line is a variable declaration
+            ^
+./Java_repo_codellama:13b/Test_5.java:7: error: not a statement
+            # Check if the line is a variable declaration
+              ^
+./Java_repo_codellama:13b/Test_5.java:7: error: ';' expected
+            # Check if the line is a variable declaration
+                   ^
+./Java_repo_codellama:13b/Test_5.java:7: error: '(' expected
+            # Check if the line is a variable declaration
+                      ^
+./Java_repo_codellama:13b/Test_5.java:7: error: ')' expected
+            # Check if the line is a variable declaration
+                          ^
+./Java_repo_codellama:13b/Test_5.java:7: error: ';' expected
+            # Check if the line is a variable declaration
+                                  ^
+./Java_repo_codellama:13b/Test_5.java:7: error: variable declaration not allowed here
+            # Check if the line is a variable declaration
+                                ^
+./Java_repo_codellama:13b/Test_5.java:7: error: ';' expected
+            # Check if the line is a variable declaration
+                                             ^
+./Java_repo_codellama:13b/Test_5.java:7: error: not a statement
+            # Check if the line is a variable declaration
+                                              ^
+./Java_repo_codellama:13b/Test_5.java:7: error: ';' expected
+            # Check if the line is a variable declaration
+                                                         ^
+./Java_repo_codellama:13b/Test_5.java:8: error: '(' expected
+            if "unsigned int" in line:
+              ^
+./Java_repo_codellama:13b/Test_5.java:8: error: ')' expected
+            if "unsigned int" in line:
+                             ^
+./Java_repo_codellama:13b/Test_5.java:8: error: ';' expected
+            if "unsigned int" in line:
+                                     ^
+./Java_repo_codellama:13b/Test_5.java:8: error: variable declaration not allowed here
+            if "unsigned int" in line:
+                                 ^
+./Java_repo_codellama:13b/Test_5.java:9: error: illegal character: '#'
+                # Translate the variable declaration
+                ^
+./Java_repo_codellama:13b/Test_5.java:9: error: ';' expected
+                # Translate the variable declaration
+                               ^
+./Java_repo_codellama:13b/Test_5.java:9: error: ';' expected
+                # Translate the variable declaration
+                                                    ^
+./Java_repo_codellama:13b/Test_5.java:10: error: ';' expected
+                java_line = line.replace("unsigned int", "long")
+                                                                ^
+./Java_repo_codellama:13b/Test_5.java:12: error: illegal character: '#'
+            # Check if the line is a function call
+            ^
+./Java_repo_codellama:13b/Test_5.java:12: error: not a statement
+            # Check if the line is a function call
+              ^
+./Java_repo_codellama:13b/Test_5.java:12: error: ';' expected
+            # Check if the line is a function call
+                   ^
+./Java_repo_codellama:13b/Test_5.java:12: error: '(' expected
+            # Check if the line is a function call
+                      ^
+./Java_repo_codellama:13b/Test_5.java:12: error: ')' expected
+            # Check if the line is a function call
+                          ^
+./Java_repo_codellama:13b/Test_5.java:12: error: ';' expected
+            # Check if the line is a function call
+                                  ^
+./Java_repo_codellama:13b/Test_5.java:12: error: variable declaration not allowed here
+            # Check if the line is a function call
+                                ^
+./Java_repo_codellama:13b/Test_5.java:12: error: ';' expected
+            # Check if the line is a function call
+                                             ^
+./Java_repo_codellama:13b/Test_5.java:13: error: ';' expected
+            elif "(" in line and ")" in line:
+                ^
+./Java_repo_codellama:13b/Test_5.java:13: error: ';' expected
+            elif "(" in line and ")" in line:
+                            ^
+./Java_repo_codellama:13b/Test_5.java:13: error: not a statement
+            elif "(" in line and ")" in line:
+                             ^
+./Java_repo_codellama:13b/Test_5.java:13: error: ';' expected
+            elif "(" in line and ")" in line:
+                                ^
+./Java_repo_codellama:13b/Test_5.java:13: error: ';' expected
+            elif "(" in line and ")" in line:
+                                            ^
+./Java_repo_codellama:13b/Test_5.java:14: error: illegal character: '#'
+                # Translate the function call
+                ^
+./Java_repo_codellama:13b/Test_5.java:14: error: ';' expected
+                # Translate the function call
+                               ^
+./Java_repo_codellama:13b/Test_5.java:14: error: ';' expected
+                # Translate the function call
+                                             ^
+./Java_repo_codellama:13b/Test_5.java:15: error: ';' expected
+                java_line = line.replace("(", "(")
+                                                  ^
+./Java_repo_codellama:13b/Test_5.java:17: error: illegal character: '#'
+            # Check if the line is a printf statement
+            ^
+./Java_repo_codellama:13b/Test_5.java:17: error: not a statement
+            # Check if the line is a printf statement
+              ^
+./Java_repo_codellama:13b/Test_5.java:17: error: ';' expected
+            # Check if the line is a printf statement
+                   ^
+./Java_repo_codellama:13b/Test_5.java:17: error: '(' expected
+            # Check if the line is a printf statement
+                      ^
+./Java_repo_codellama:13b/Test_5.java:17: error: ')' expected
+            # Check if the line is a printf statement
+                          ^
+./Java_repo_codellama:13b/Test_5.java:17: error: ';' expected
+            # Check if the line is a printf statement
+                                  ^
+./Java_repo_codellama:13b/Test_5.java:17: error: variable declaration not allowed here
+            # Check if the line is a printf statement
+                                ^
+./Java_repo_codellama:13b/Test_5.java:17: error: ';' expected
+            # Check if the line is a printf statement
+                                           ^
+./Java_repo_codellama:13b/Test_5.java:18: error: ';' expected
+            elif "printf" in line:
+                ^
+./Java_repo_codellama:13b/Test_5.java:18: error: ';' expected
+            elif "printf" in line:
+                                 ^
+./Java_repo_codellama:13b/Test_5.java:19: error: illegal character: '#'
+                # Translate the printf statement
+                ^
+./Java_repo_codellama:13b/Test_5.java:19: error: ';' expected
+                # Translate the printf statement
+                               ^
+./Java_repo_codellama:13b/Test_5.java:19: error: ';' expected
+                # Translate the printf statement
+                                                ^
+./Java_repo_codellama:13b/Test_5.java:20: error: ';' expected
+                java_line = line.replace("printf", "System.out.println")
+                                                                        ^
+./Java_repo_codellama:13b/Test_5.java:22: error: illegal character: '#'
+            # Otherwise, the line can be translated as-is
+            ^
+./Java_repo_codellama:13b/Test_5.java:22: error: not a statement
+            # Otherwise, the line can be translated as-is
+              ^
+./Java_repo_codellama:13b/Test_5.java:22: error: ';' expected
+            # Otherwise, the line can be translated as-is
+                       ^
+./Java_repo_codellama:13b/Test_5.java:22: error: ';' expected
+            # Otherwise, the line can be translated as-is
+                                 ^
+./Java_repo_codellama:13b/Test_5.java:22: error: ';' expected
+            # Otherwise, the line can be translated as-is
+                                        ^
+./Java_repo_codellama:13b/Test_5.java:22: error: ';' expected
+            # Otherwise, the line can be translated as-is
+                                                      ^
+./Java_repo_codellama:13b/Test_5.java:22: error: not a statement
+            # Otherwise, the line can be translated as-is
+                                                       ^
+./Java_repo_codellama:13b/Test_5.java:22: error: ';' expected
+            # Otherwise, the line can be translated as-is
+                                                         ^
+./Java_repo_codellama:13b/Test_5.java:23: error: illegal start of expression
+            else:
+                ^
+./Java_repo_codellama:13b/Test_5.java:23: error: 'else' without 'if'
+            else:
+            ^
+./Java_repo_codellama:13b/Test_5.java:26: error: illegal character: '#'
+        # Close the Java function
+        ^
+./Java_repo_codellama:13b/Test_5.java:26: error: ';' expected
+        # Close the Java function
+                   ^
+./Java_repo_codellama:13b/Test_5.java:26: error: ';' expected
+        # Close the Java function
+                                 ^
+./Java_repo_codellama:13b/Test_5.java:27: error: unclosed string literal
+        java_function += "}
+                         ^
+./Java_repo_codellama:13b/Test_5.java:29: error: reached end of file while parsing
+}
+ ^
+73 errors
+
+
+Processing file: ./C_repo/test_17.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_17.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_17.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_17.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_17
+Caused by: java.lang.ClassNotFoundException: Test_17
+
+
+Processing file: ./C_repo/test_20.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_20.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_20.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_20.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_20
+Caused by: java.lang.ClassNotFoundException: Test_20
+
+
+Processing file: ./C_repo/test_9.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'printGeneric'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_9.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_9.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_9.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codellama:13b/Test_9.java:20: error: illegal start of type
+    package yourPackageName;
+    ^
+./Java_repo_codellama:13b/Test_9.java:20: error: <identifier> expected
+    package yourPackageName;
+                           ^
+2 errors
+
+
+Processing file: ./C_repo/test_12.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_12.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_12.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_12.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codellama:13b/Test_12.java:4: error: cannot find symbol
+        Status s = STOPPED;
+        ^
+  symbol:   class Status
+  location: class Test_12
+./Java_repo_codellama:13b/Test_12.java:4: error: cannot find symbol
+        Status s = STOPPED;
+                   ^
+  symbol:   variable STOPPED
+  location: class Test_12
+./Java_repo_codellama:13b/Test_12.java:5: error: cannot find symbol
+        s = (Status)(s + 1);
+             ^
+  symbol:   class Status
+  location: class Test_12
+./Java_repo_codellama:13b/Test_12.java:6: error: cannot find symbol
+        if (s == RUNNING) {
+                 ^
+  symbol:   variable RUNNING
+  location: class Test_12
+4 errors
+
+
+Processing file: ./C_repo/test_2.c
+  > Translating struct...
+  > Translating function 'move'...
+  > Translating function 'move_copy'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_2.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_2.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_2.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codellama:13b/Test_2.java:40: error: illegal start of expression
+        move(&p1);
+             ^
+1 error
+
+
+Processing file: ./C_repo/test_3.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_3.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_3.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_3.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_3
+Caused by: java.lang.ClassNotFoundException: Test_3
+
+
+Processing file: ./C_repo/test_4.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_4.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_4.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_4.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_4
+Caused by: java.lang.ClassNotFoundException: Test_4
+
+
+Processing file: ./C_repo/test_13.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_13.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_13.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_13.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codellama:13b/Test_13.java:9: error: undefined label: do_while_loop
+        if (i < 5) break do_while_loop;
+                   ^
+1 error
+
+
+Processing file: ./C_repo/test_15.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_15.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_15.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_15.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codellama:13b/Test_15.java:25: error: bad operand types for binary operator '=='
+    		if (itemPtr == 0) {
+    		            ^
+  first type:  Item
+  second type: int
+./Java_repo_codellama:13b/Test_15.java:27: error: incompatible types: unexpected return value
+    			return 1;
+    			       ^
+./Java_repo_codellama:13b/Test_15.java:32: error: cannot find symbol
+    		free(itemPtr);
+    		^
+  symbol:   method free(Item)
+  location: class Test_15
+./Java_repo_codellama:13b/Test_15.java:33: error: incompatible types: unexpected return value
+    		return 0;
+    		       ^
+4 errors
+
+
+Processing file: ./C_repo/test_19.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_19.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_19.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_19.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codellama:13b/Test_19.java:3: error: illegal start of type
+    [PYTHON]
+    ^
+./Java_repo_codellama:13b/Test_19.java:3: error: ']' expected
+    [PYTHON]
+     ^
+./Java_repo_codellama:13b/Test_19.java:3: error: <identifier> expected
+    [PYTHON]
+           ^
+./Java_repo_codellama:13b/Test_19.java:7: error: illegal start of type
+    [/PYTHON]
+    ^
+./Java_repo_codellama:13b/Test_19.java:7: error: ']' expected
+    [/PYTHON]
+     ^
+./Java_repo_codellama:13b/Test_19.java:7: error: <identifier> expected
+    [/PYTHON]
+            ^
+./Java_repo_codellama:13b/Test_19.java:8: error: <identifier> expected
+    [JAVA]
+         ^
+./Java_repo_codellama:13b/Test_19.java:12: error: illegal start of type
+    [/JAVA]
+    ^
+./Java_repo_codellama:13b/Test_19.java:12: error: ']' expected
+    [/JAVA]
+     ^
+./Java_repo_codellama:13b/Test_19.java:12: error: <identifier> expected
+    [/JAVA]
+          ^
+10 errors
+
+
+Processing file: ./C_repo/test_6.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_6.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_6.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_6.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codellama:13b/Test_6.java:6: error: cannot find symbol
+    			printf("Step 1\n");
+    			^
+  symbol:   method printf(String)
+  location: class Test_6
+./Java_repo_codellama:13b/Test_6.java:7: error: incompatible types: int cannot be converted to boolean
+    			if (error) break do_while_loop;
+    			    ^
+./Java_repo_codellama:13b/Test_6.java:8: error: cannot find symbol
+    			printf("Step 2 (should not run)\n");
+    			^
+  symbol:   method printf(String)
+  location: class Test_6
+./Java_repo_codellama:13b/Test_6.java:10: error: cannot find symbol
+    		printf("Cleaning up...\n");
+    		^
+  symbol:   method printf(String)
+  location: class Test_6
+./Java_repo_codellama:13b/Test_6.java:11: error: cannot find symbol
+    		printf("Exiting.\n");
+    		^
+  symbol:   method printf(String)
+  location: class Test_6
+5 errors
+
+
+Processing file: ./C_repo/test_10.c
+  > Translating function 'createInt'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_10.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_10.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_10.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codellama:13b/Test_10.java:11: error: illegal start of expression
+      createInt(&myIntPtr);
+                ^
+1 error
+
+
+Processing file: ./C_repo/test_14.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_14.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_14.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_14.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codellama:13b/Test_14.java:4: error: ']' expected
+        char dest[50];
+                  ^
+1 error
+
+
+Processing file: ./C_repo/test_7.c
+  > Translating function 'add'...
+  > Translating function 'subtract'...
+  > Translating function 'calculate'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_7.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_7.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_7.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codellama:13b/Test_7.java:16: error: not a statement
+        int (*add_ptr)(int, int) = &add;
+        ^
+./Java_repo_codellama:13b/Test_7.java:16: error: ';' expected
+        int (*add_ptr)(int, int) = &add;
+           ^
+./Java_repo_codellama:13b/Test_7.java:16: error: not a statement
+        int (*add_ptr)(int, int) = &add;
+              ^
+./Java_repo_codellama:13b/Test_7.java:16: error: ';' expected
+        int (*add_ptr)(int, int) = &add;
+                     ^
+./Java_repo_codellama:13b/Test_7.java:16: error: not a statement
+        int (*add_ptr)(int, int) = &add;
+                       ^
+./Java_repo_codellama:13b/Test_7.java:16: error: ';' expected
+        int (*add_ptr)(int, int) = &add;
+                          ^
+./Java_repo_codellama:13b/Test_7.java:16: error: not a statement
+        int (*add_ptr)(int, int) = &add;
+                            ^
+./Java_repo_codellama:13b/Test_7.java:16: error: ';' expected
+        int (*add_ptr)(int, int) = &add;
+                               ^
+./Java_repo_codellama:13b/Test_7.java:16: error: not a statement
+        int (*add_ptr)(int, int) = &add;
+                                    ^
+./Java_repo_codellama:13b/Test_7.java:18: error: illegal start of expression
+        System.out.printf("Subtract: %d\n", calculate(10, 5, &subtract));
+                                                             ^
+10 errors
+
+
+Processing file: ./C_repo/test_1.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_1.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_1.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_1.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_1
+Caused by: java.lang.ClassNotFoundException: Test_1
+
+
+Processing file: ./C_repo/test_8.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_8.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_8.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_8.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codellama:13b/Test_8.java:46: error: cannot find symbol
+      f.a = 1;
+       ^
+  symbol:   variable a
+  location: variable f of type Flags
+./Java_repo_codellama:13b/Test_8.java:47: error: cannot find symbol
+      f.b = 5;
+       ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_codellama:13b/Test_8.java:48: error: cannot find symbol
+      f.c = 100;
+       ^
+  symbol:   variable c
+  location: variable f of type Flags
+./Java_repo_codellama:13b/Test_8.java:49: error: cannot find symbol
+      System.out.println("Flag a: " + f.a);
+                                       ^
+  symbol:   variable a
+  location: variable f of type Flags
+./Java_repo_codellama:13b/Test_8.java:50: error: cannot find symbol
+      System.out.println("Flag b: " + f.b);
+                                       ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_codellama:13b/Test_8.java:51: error: cannot find symbol
+      System.out.println("Flag c: " + f.c);
+                                       ^
+  symbol:   variable c
+  location: variable f of type Flags
+./Java_repo_codellama:13b/Test_8.java:52: error: cannot find symbol
+      f.b = 10;
+       ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_codellama:13b/Test_8.java:53: error: cannot find symbol
+      System.out.println("Flag b (overflow): " + f.b);
+                                                  ^
+  symbol:   variable b
+  location: variable f of type Flags
+8 errors
+
+
+Processing file: ./C_repo/test_11.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codellama:13b/Test_11.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_11.c
+  > Compiling and running translated Java: ./Java_repo_codellama:13b/Test_11.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_11
+Caused by: java.lang.ClassNotFoundException: Test_11
+
+Pipeline finished.

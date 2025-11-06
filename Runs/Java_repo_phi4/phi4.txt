@@ -1,0 +1,333 @@
+Logging run to: ./logs/2025-11-05_22-32-18
+Warning: Could not connect to Ollama. Is it running? Error: KeyError: 'name'
+Starting pipeline: ./C_repo -> ./Java_repo_phi4
+Output directory created/ensured at: ./Java_repo_phi4
+
+Processing file: ./C_repo/test_16.c
+  > Translating global variable...
+  > Translating function 'increment_global'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_16.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_16.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_16.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_phi4/Test_16.java:12: error: cannot find symbol
+        increment_global(g_counter);
+        ^
+  symbol:   method increment_global(int)
+  location: class Test_16
+1 error
+
+
+Processing file: ./C_repo/test_18.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_18.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_18.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_18.java
+  > Comparing outputs...
+  > FAILURE: Outputs do not match.
+--- C Output ---
+Size of int: 4
+Size of Data: 16
+Size of Data*: 8
+
+--- Java Output ---
+Size of int: 4
+Size of Data: 14
+Size of Data*: 4
+
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_5.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_5.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_5.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_5.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_17.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_17.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_17.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_17.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_20.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_20.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_20.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_20.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_9.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'printGeneric'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_9.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_9.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_9.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_12.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_12.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_12.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_12.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_phi4/Test_12.java:4: error: cannot find symbol
+            HashMap<String, Integer> statusMap = new HashMap<>();
+            ^
+  symbol:   class HashMap
+  location: class Test_12
+./Java_repo_phi4/Test_12.java:4: error: cannot find symbol
+            HashMap<String, Integer> statusMap = new HashMap<>();
+                                                     ^
+  symbol:   class HashMap
+  location: class Test_12
+2 errors
+
+
+Processing file: ./C_repo/test_2.c
+  > Translating struct...
+  > Translating function 'move'...
+  > Translating function 'move_copy'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_2.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_2.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_2.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_3.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_3.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_3.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_3.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_phi4/Test_3.java:4: error: cannot find symbol
+        ByteBuffer buffer = ByteBuffer.allocate(4).order(ByteOrder.nativeOrder());
+        ^
+  symbol:   class ByteBuffer
+  location: class Test_3
+./Java_repo_phi4/Test_3.java:4: error: cannot find symbol
+        ByteBuffer buffer = ByteBuffer.allocate(4).order(ByteOrder.nativeOrder());
+                            ^
+  symbol:   variable ByteBuffer
+  location: class Test_3
+./Java_repo_phi4/Test_3.java:4: error: cannot find symbol
+        ByteBuffer buffer = ByteBuffer.allocate(4).order(ByteOrder.nativeOrder());
+                                                         ^
+  symbol:   variable ByteOrder
+  location: class Test_3
+3 errors
+
+
+Processing file: ./C_repo/test_4.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_4.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_4.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_4.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_13.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_13.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_13.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_13.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_15.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_15.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_15.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_15.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_phi4/Test_15.java:31: error: reached end of file while parsing
+}
+ ^
+1 error
+
+
+Processing file: ./C_repo/test_19.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_19.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_19.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_19.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_phi4/Test_19.java:75: error: cannot find symbol
+        o.innerData().innerVal(123);
+         ^
+  symbol:   method innerData()
+  location: variable o of type Outer
+./Java_repo_phi4/Test_19.java:76: error: cannot find symbol
+        o.name("MyStruct");
+         ^
+  symbol:   method name(String)
+  location: variable o of type Outer
+./Java_repo_phi4/Test_19.java:77: error: cannot find symbol
+        System.out.println("Name: " + o.name());
+                                       ^
+  symbol:   method name()
+  location: variable o of type Outer
+./Java_repo_phi4/Test_19.java:78: error: cannot find symbol
+        System.out.println("Inner: " + o.innerData().innerVal());
+                                        ^
+  symbol:   method innerData()
+  location: variable o of type Outer
+4 errors
+
+
+Processing file: ./C_repo/test_6.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_6.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_6.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_6.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_phi4/Test_6.java:8: error: incompatible types: int cannot be converted to boolean
+            if (error) {
+                ^
+1 error
+
+
+Processing file: ./C_repo/test_10.c
+  > Translating function 'createInt'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_10.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_10.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_10.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_phi4/Test_10.java:14: error: method createInt in class Test_10 cannot be applied to given types;
+            int[] myIntPtrArray = createInt();
+                                  ^
+  required: Integer[]
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+Processing file: ./C_repo/test_14.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_14.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_14.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_14.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_7.c
+  > Translating function 'add'...
+  > Translating function 'subtract'...
+  > Translating function 'calculate'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_7.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_7.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_7.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_phi4/Test_7.java:15: error: method add(int,int) is already defined in class Test_7
+    public static int add(int x, int y) {
+                      ^
+./Java_repo_phi4/Test_7.java:19: error: method subtract(int,int) is already defined in class Test_7
+        public static int subtract(int x, int y) {
+                          ^
+./Java_repo_phi4/Test_7.java:23: error: cannot find symbol
+        public static int calculate(int a, int b, BiFunction<Integer, Integer, Integer> operation) {
+                                                  ^
+  symbol:   class BiFunction
+  location: class Test_7
+./Java_repo_phi4/Test_7.java:28: error: cannot find symbol
+            System.out.println("Add: " + calculate(10, 5, Main::add));
+                                                          ^
+  symbol:   variable Main
+  location: class Test_7
+./Java_repo_phi4/Test_7.java:29: error: cannot find symbol
+            System.out.println("Subtract: " + calculate(10, 5, Main::subtract));
+                                                               ^
+  symbol:   variable Main
+  location: class Test_7
+5 errors
+
+
+Processing file: ./C_repo/test_1.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_1.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_1.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_1.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_8.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_8.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_8.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_8.java
+  > Java FAILED: Java Execution Failed: Exception in thread "main" java.util.UnknownFormatConversionException: Conversion = 'u'
+	at java.base/java.util.Formatter$FormatSpecifier.conversion(Formatter.java:2839)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Formatter.java:2865)
+	at java.base/java.util.Formatter.parse(Formatter.java:2713)
+	at java.base/java.util.Formatter.format(Formatter.java:2655)
+	at java.base/java.io.PrintStream.format(PrintStream.java:1053)
+	at java.base/java.io.PrintStream.printf(PrintStream.java:949)
+	at Test_8.main(Test_8.java:80)
+
+
+Processing file: ./C_repo/test_11.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_phi4/Test_11.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_11.c
+  > Compiling and running translated Java: ./Java_repo_phi4/Test_11.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+Pipeline finished.

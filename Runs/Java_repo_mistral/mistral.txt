@@ -1,0 +1,692 @@
+Logging run to: ./logs/2025-11-06_00-22-12
+Warning: Could not connect to Ollama. Is it running? Error: KeyError: 'name'
+Starting pipeline: ./C_repo -> ./Java_repo_mistral
+Output directory created/ensured at: ./Java_repo_mistral
+
+Processing file: ./C_repo/test_16.c
+  > Translating global variable...
+  > Translating function 'increment_global'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_16.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_16.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_16.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral/Test_16.java:3: error: ';' expected
+    In Java, the given C global variable "int g_counter = 10" would be translated as a public static field with the initial value maintained. Given our translation rules:
+                ^
+./Java_repo_mistral/Test_16.java:3: error: ';' expected
+    In Java, the given C global variable "int g_counter = 10" would be translated as a public static field with the initial value maintained. Given our translation rules:
+                        ^
+./Java_repo_mistral/Test_16.java:3: error: ';' expected
+    In Java, the given C global variable "int g_counter = 10" would be translated as a public static field with the initial value maintained. Given our translation rules:
+                                        ^
+./Java_repo_mistral/Test_16.java:3: error: ';' expected
+    In Java, the given C global variable "int g_counter = 10" would be translated as a public static field with the initial value maintained. Given our translation rules:
+                                                                      ^
+./Java_repo_mistral/Test_16.java:3: error: ';' expected
+    In Java, the given C global variable "int g_counter = 10" would be translated as a public static field with the initial value maintained. Given our translation rules:
+                                                                                    ^
+./Java_repo_mistral/Test_16.java:3: error: <identifier> expected
+    In Java, the given C global variable "int g_counter = 10" would be translated as a public static field with the initial value maintained. Given our translation rules:
+                                                                                      ^
+./Java_repo_mistral/Test_16.java:3: error: ';' expected
+    In Java, the given C global variable "int g_counter = 10" would be translated as a public static field with the initial value maintained. Given our translation rules:
+                                                                                                               ^
+./Java_repo_mistral/Test_16.java:3: error: ';' expected
+    In Java, the given C global variable "int g_counter = 10" would be translated as a public static field with the initial value maintained. Given our translation rules:
+                                                                                                                           ^
+./Java_repo_mistral/Test_16.java:3: error: ';' expected
+    In Java, the given C global variable "int g_counter = 10" would be translated as a public static field with the initial value maintained. Given our translation rules:
+                                                                                                                                            ^
+./Java_repo_mistral/Test_16.java:3: error: ';' expected
+    In Java, the given C global variable "int g_counter = 10" would be translated as a public static field with the initial value maintained. Given our translation rules:
+                                                                                                                                                       ^
+./Java_repo_mistral/Test_16.java:3: error: ';' expected
+    In Java, the given C global variable "int g_counter = 10" would be translated as a public static field with the initial value maintained. Given our translation rules:
+                                                                                                                                                                         ^
+./Java_repo_mistral/Test_16.java:5: error: <identifier> expected
+    Type: `int` -> `int` (no change required)
+        ^
+./Java_repo_mistral/Test_16.java:5: error: illegal character: '`'
+    Type: `int` -> `int` (no change required)
+          ^
+./Java_repo_mistral/Test_16.java:5: error: illegal character: '`'
+    Type: `int` -> `int` (no change required)
+              ^
+./Java_repo_mistral/Test_16.java:5: error: illegal character: '`'
+    Type: `int` -> `int` (no change required)
+                   ^
+./Java_repo_mistral/Test_16.java:5: error: illegal character: '`'
+    Type: `int` -> `int` (no change required)
+                       ^
+./Java_repo_mistral/Test_16.java:5: error: ';' expected
+    Type: `int` -> `int` (no change required)
+                                   ^
+./Java_repo_mistral/Test_16.java:5: error: <identifier> expected
+    Type: `int` -> `int` (no change required)
+                                            ^
+./Java_repo_mistral/Test_16.java:6: error: ';' expected
+    const: Not present in this example, but if it were, it would translate to no change since there's no equivalent keyword for 'const' in Java.
+                      ^
+./Java_repo_mistral/Test_16.java:6: error: as of release 8, 'this' is allowed as the parameter name for the receiver type only
+    const: Not present in this example, but if it were, it would translate to no change since there's no equivalent keyword for 'const' in Java.
+                          ^
+  which has to be the first parameter, and cannot be a lambda parameter
+./Java_repo_mistral/Test_16.java:6: error: ';' expected
+    const: Not present in this example, but if it were, it would translate to no change since there's no equivalent keyword for 'const' in Java.
+                              ^
+./Java_repo_mistral/Test_16.java:6: error: <identifier> expected
+    const: Not present in this example, but if it were, it would translate to no change since there's no equivalent keyword for 'const' in Java.
+                                      ^
+./Java_repo_mistral/Test_16.java:6: error: ';' expected
+    const: Not present in this example, but if it were, it would translate to no change since there's no equivalent keyword for 'const' in Java.
+                                           ^
+./Java_repo_mistral/Test_16.java:6: error: ';' expected
+    const: Not present in this example, but if it were, it would translate to no change since there's no equivalent keyword for 'const' in Java.
+                                                          ^
+./Java_repo_mistral/Test_16.java:6: error: ';' expected
+    const: Not present in this example, but if it were, it would translate to no change since there's no equivalent keyword for 'const' in Java.
+                                                                          ^
+./Java_repo_mistral/Test_16.java:6: error: ';' expected
+    const: Not present in this example, but if it were, it would translate to no change since there's no equivalent keyword for 'const' in Java.
+                                                                                ^
+./Java_repo_mistral/Test_16.java:6: error: ';' expected
+    const: Not present in this example, but if it were, it would translate to no change since there's no equivalent keyword for 'const' in Java.
+                                                                                             ^
+./Java_repo_mistral/Test_16.java:6: error: unclosed character literal
+    const: Not present in this example, but if it were, it would translate to no change since there's no equivalent keyword for 'const' in Java.
+                                                                                                   ^
+./Java_repo_mistral/Test_16.java:6: error: ';' expected
+    const: Not present in this example, but if it were, it would translate to no change since there's no equivalent keyword for 'const' in Java.
+                                                                                                                   ^
+./Java_repo_mistral/Test_16.java:6: error: <identifier> expected
+    const: Not present in this example, but if it were, it would translate to no change since there's no equivalent keyword for 'const' in Java.
+                                                                                                                           ^
+./Java_repo_mistral/Test_16.java:6: error: unclosed character literal
+    const: Not present in this example, but if it were, it would translate to no change since there's no equivalent keyword for 'const' in Java.
+                                                                                                                                ^
+./Java_repo_mistral/Test_16.java:6: error: unclosed character literal
+    const: Not present in this example, but if it were, it would translate to no change since there's no equivalent keyword for 'const' in Java.
+                                                                                                                                      ^
+./Java_repo_mistral/Test_16.java:6: error: ';' expected
+    const: Not present in this example, but if it were, it would translate to no change since there's no equivalent keyword for 'const' in Java.
+                                                                                                                                               ^
+./Java_repo_mistral/Test_16.java:7: error: <identifier> expected
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+            ^
+./Java_repo_mistral/Test_16.java:7: error: ';' expected
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                         ^
+./Java_repo_mistral/Test_16.java:7: error: as of release 8, 'this' is allowed as the parameter name for the receiver type only
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                             ^
+  which has to be the first parameter, and cannot be a lambda parameter
+./Java_repo_mistral/Test_16.java:7: error: ';' expected
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                 ^
+./Java_repo_mistral/Test_16.java:7: error: <identifier> expected
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                         ^
+./Java_repo_mistral/Test_16.java:7: error: ';' expected
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                              ^
+./Java_repo_mistral/Test_16.java:7: error: illegal character: '`'
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                                  ^
+./Java_repo_mistral/Test_16.java:7: error: <identifier> expected
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                                           ^
+./Java_repo_mistral/Test_16.java:7: error: illegal character: '`'
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                                               ^
+./Java_repo_mistral/Test_16.java:7: error: <identifier> expected
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                                                         ^
+./Java_repo_mistral/Test_16.java:7: error: ';' expected
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                                                             ^
+./Java_repo_mistral/Test_16.java:7: error: ';' expected
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                                                                             ^
+./Java_repo_mistral/Test_16.java:7: error: illegal character: '`'
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                                                                                 ^
+./Java_repo_mistral/Test_16.java:7: error: illegal character: '`'
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                                                                                      ^
+./Java_repo_mistral/Test_16.java:7: error: illegal character: '`'
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                                                                                            ^
+./Java_repo_mistral/Test_16.java:7: error: <identifier> expected
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                                                                                                     ^
+./Java_repo_mistral/Test_16.java:7: error: illegal character: '`'
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                                                                                                          ^
+./Java_repo_mistral/Test_16.java:7: error: <identifier> expected
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                                                                                                                    ^
+./Java_repo_mistral/Test_16.java:7: error: ';' expected
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                                                                                                                        ^
+./Java_repo_mistral/Test_16.java:7: error: ';' expected
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                                                                                                                                        ^
+./Java_repo_mistral/Test_16.java:7: error: illegal character: '`'
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                                                                                                                                            ^
+./Java_repo_mistral/Test_16.java:7: error: illegal character: '`'
+    unsigned: Not present in this example, but if `unsigned int` appeared, it would translate to `long`. If `unsigned char` appeared, it would translate to `int`.
+                                                                                                                                                                ^
+./Java_repo_mistral/Test_16.java:8: error: <identifier> expected
+    Visibility: All globals become 'public static'. In this case, since there's no qualifier (i.e., `static` or `extern`) in the C code, we assume it's a global variable and translate it to `public static int`.
+              ^
+./Java_repo_mistral/Test_16.java:8: error: ';' expected
+    Visibility: All globals become 'public static'. In this case, since there's no qualifier (i.e., `static` or `extern`) in the C code, we assume it's a global variable and translate it to `public static int`.
+                           ^
+./Java_repo_mistral/Test_16.java:8: error: unclosed character literal
+    Visibility: All globals become 'public static'. In this case, since there's no qualifier (i.e., `static` or `extern`) in the C code, we assume it's a global variable and translate it to `public static int`.
+                                   ^
+./Java_repo_mistral/Test_16.java:8: error: <identifier> expected
+    Visibility: All globals become 'public static'. In this case, since there's no qualifier (i.e., `static` or `extern`) in the C code, we assume it's a global variable and translate it to `public static int`.
+                                          ^
+./Java_repo_mistral/Test_16.java:8: error: unclosed character literal
+    Visibility: All globals become 'public static'. In this case, since there's no qualifier (i.e., `static` or `extern`) in the C code, we assume it's a global variable and translate it to `public static int`.
+                                                 ^
+./Java_repo_mistral/Test_16.java:8: error: illegal start of type
+    Visibility: All globals become 'public static'. In this case, since there's no qualifier (i.e., `static` or `extern`) in the C code, we assume it's a global variable and translate it to `public static int`.
+                                                       ^
+./Java_repo_mistral/Test_16.java:8: error: ';' expected
+    Visibility: All globals become 'public static'. In this case, since there's no qualifier (i.e., `static` or `extern`) in the C code, we assume it's a global variable and translate it to `public static int`.
+                                                           ^
+./Java_repo_mistral/Test_16.java:8: error: unclosed character literal
+    Visibility: All globals become 'public static'. In this case, since there's no qualifier (i.e., `static` or `extern`) in the C code, we assume it's a global variable and translate it to `public static int`.
+                                                                             ^
+./Java_repo_mistral/Test_16.java:8: error: <identifier> expected
+    Visibility: All globals become 'public static'. In this case, since there's no qualifier (i.e., `static` or `extern`) in the C code, we assume it's a global variable and translate it to `public static int`.
+                                                                                                  ^
+./Java_repo_mistral/Test_16.java:8: error: illegal character: '`'
+    Visibility: All globals become 'public static'. In this case, since there's no qualifier (i.e., `static` or `extern`) in the C code, we assume it's a global variable and translate it to `public static int`.
+                                                                                                    ^
+./Java_repo_mistral/Test_16.java:8: error: illegal character: '`'
+    Visibility: All globals become 'public static'. In this case, since there's no qualifier (i.e., `static` or `extern`) in the C code, we assume it's a global variable and translate it to `public static int`.
+                                                                                                           ^
+./Java_repo_mistral/Test_16.java:8: error: illegal character: '`'
+    Visibility: All globals become 'public static'. In this case, since there's no qualifier (i.e., `static` or `extern`) in the C code, we assume it's a global variable and translate it to `public static int`.
+                                                                                                                ^
+./Java_repo_mistral/Test_16.java:8: error: illegal character: '`'
+    Visibility: All globals become 'public static'. In this case, since there's no qualifier (i.e., `static` or `extern`) in the C code, we assume it's a global variable and translate it to `public static int`.
+                                                                                                                       ^
+./Java_repo_mistral/Test_16.java:8: error: ',', ')', or '[' expected
+    Visibility: All globals become 'public static'. In this case, since there's no qualifier (i.e., `static` or `extern`) in the C code, we assume it's a global variable and translate it to `public static int`.
+                                                                                                                                ^
+./Java_repo_mistral/Test_16.java:8: error: unclosed character literal
+    Visibility: All globals become 'public static'. In this case, since there's no qualifier (i.e., `static` or `extern`) in the C code, we assume it's a global variable and translate it to `public static int`.
+                                                                                                                                                     ^
+./Java_repo_mistral/Test_16.java:8: error: illegal character: '`'
+    Visibility: All globals become 'public static'. In this case, since there's no qualifier (i.e., `static` or `extern`) in the C code, we assume it's a global variable and translate it to `public static int`.
+                                                                                                                                                                                              ^
+./Java_repo_mistral/Test_16.java:8: error: illegal character: '`'
+    Visibility: All globals become 'public static'. In this case, since there's no qualifier (i.e., `static` or `extern`) in the C code, we assume it's a global variable and translate it to `public static int`.
+                                                                                                                                                                                                                ^
+./Java_repo_mistral/Test_16.java:9: error: <identifier> expected
+    Output: `public static final int g_counter = 10;`
+          ^
+./Java_repo_mistral/Test_16.java:9: error: illegal character: '`'
+    Output: `public static final int g_counter = 10;`
+            ^
+./Java_repo_mistral/Test_16.java:9: error: illegal character: '`'
+    Output: `public static final int g_counter = 10;`
+                                                    ^
+75 errors
+
+
+Processing file: ./C_repo/test_18.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_18.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_18.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_18.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral/Test_18.java:24: error: cannot find symbol
+      System.out.printf("Size of int: %d\n", SizeOf(int.class));
+                                             ^
+  symbol:   method SizeOf(Class<Integer>)
+  location: class Test_18
+./Java_repo_mistral/Test_18.java:25: error: cannot find symbol
+      structData sizeOfData = new structData();
+      ^
+  symbol:   class structData
+  location: class Test_18
+./Java_repo_mistral/Test_18.java:25: error: cannot find symbol
+      structData sizeOfData = new structData();
+                                  ^
+  symbol:   class structData
+  location: class Test_18
+./Java_repo_mistral/Test_18.java:27: error: cannot find symbol
+      structDataPtr sizeOfDataPtr = sizeOfData;
+      ^
+  symbol:   class structDataPtr
+  location: class Test_18
+4 errors
+
+
+Processing file: ./C_repo/test_5.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_5.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_5.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_5.java
+  > Java FAILED: Java Execution Failed: Exception in thread "main" java.util.UnknownFormatConversionException: Conversion = 'u'
+	at java.base/java.util.Formatter$FormatSpecifier.conversion(Formatter.java:2839)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Formatter.java:2865)
+	at java.base/java.util.Formatter.parse(Formatter.java:2713)
+	at java.base/java.util.Formatter.format(Formatter.java:2655)
+	at java.base/java.io.PrintStream.format(PrintStream.java:1053)
+	at java.base/java.io.PrintStream.printf(PrintStream.java:949)
+	at Test_5.main(Test_5.java:5)
+
+
+Processing file: ./C_repo/test_17.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_17.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_17.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_17.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_20.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_20.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_20.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_20.java
+  > Comparing outputs...
+  > FAILURE: Outputs do not match.
+--- C Output ---
+Case 2 (fall-through)
+Case 3 (fall-through)
+
+--- Java Output ---
+Case 2 (fall-through)
+
+
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_9.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'printGeneric'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_9.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_9.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_9.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_12.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_12.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_12.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_12.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral/Test_12.java:4: error: cannot find symbol
+        Status s = STOPPED;
+        ^
+  symbol:   class Status
+  location: class Test_12
+./Java_repo_mistral/Test_12.java:4: error: cannot find symbol
+        Status s = STOPPED;
+                   ^
+  symbol:   variable STOPPED
+  location: class Test_12
+./Java_repo_mistral/Test_12.java:5: error: cannot find symbol
+        s = (Status)(s + 1); // Need to cast because '+' does not work with enums in Java without a cast
+             ^
+  symbol:   class Status
+  location: class Test_12
+./Java_repo_mistral/Test_12.java:6: error: cannot find symbol
+        if (s == RUNNING) {
+                 ^
+  symbol:   variable RUNNING
+  location: class Test_12
+4 errors
+
+
+Processing file: ./C_repo/test_2.c
+  > Translating struct...
+  > Translating function 'move'...
+  > Translating function 'move_copy'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_2.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_2.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_2.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral/Test_2.java:34: error: method move_copy(Point) is already defined in class Test_2
+        static void move_copy(Point p_val_orig) {
+                    ^
+./Java_repo_mistral/Test_2.java:38: error: method move(Point) is already defined in class Test_2
+        static void move(Point p_val) {
+                    ^
+./Java_repo_mistral/Test_2.java:30: error: class Point is already defined in class Test_2
+    public static class Point {
+                  ^
+./Java_repo_mistral/Test_2.java:42: error: cannot find symbol
+            Point p1 = new Point(arr[0], arr[1]);
+                                 ^
+  symbol:   variable arr
+  location: class Test_2
+./Java_repo_mistral/Test_2.java:42: error: cannot find symbol
+            Point p1 = new Point(arr[0], arr[1]);
+                                         ^
+  symbol:   variable arr
+  location: class Test_2
+./Java_repo_mistral/Test_2.java:43: error: cannot find symbol
+            out.println("Original: " + p1.x);
+            ^
+  symbol:   variable out
+  location: class Test_2
+./Java_repo_mistral/Test_2.java:45: error: cannot find symbol
+            out.println("After move_copy: " + p1.x);
+            ^
+  symbol:   variable out
+  location: class Test_2
+./Java_repo_mistral/Test_2.java:47: error: cannot find symbol
+            out.println("After move: " + p1.x);
+            ^
+  symbol:   variable out
+  location: class Test_2
+8 errors
+
+
+Processing file: ./C_repo/test_3.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_3.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_3.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_3.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral/Test_3.java:9: error: cannot find symbol
+        f_val = Float.intToFloatBits(i_val);
+                     ^
+  symbol:   method intToFloatBits(int)
+  location: class Float
+1 error
+
+
+Processing file: ./C_repo/test_4.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_4.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_4.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_4.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_4, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_13.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_13.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_13.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_13.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_15.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_15.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_15.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_15.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral/Test_15.java:32: error: cannot find symbol
+        gc(); // Add this line to ensure garbage collection of the allocated memory, since Java doesn't have a direct free function like C
+        ^
+  symbol:   method gc()
+  location: class Test_15
+1 error
+
+
+Processing file: ./C_repo/test_19.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_19.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_19.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_19.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral/Test_19.java:21: error: cannot find symbol
+            this.inner_data = new Inner(other.inner_data);
+                ^
+  symbol: variable inner_data
+./Java_repo_mistral/Test_19.java:21: error: cannot find symbol
+            this.inner_data = new Inner(other.inner_data);
+                                             ^
+  symbol:   variable inner_data
+  location: variable other of type Outer
+./Java_repo_mistral/Test_19.java:22: error: cannot find symbol
+            this.name = new String(other.name);
+                ^
+  symbol: variable name
+./Java_repo_mistral/Test_19.java:22: error: cannot find symbol
+            this.name = new String(other.name);
+                                        ^
+  symbol:   variable name
+  location: variable other of type Outer
+./Java_repo_mistral/Test_19.java:26: error: cannot find symbol
+            this.inner_data = inner_data;
+                ^
+  symbol: variable inner_data
+./Java_repo_mistral/Test_19.java:27: error: cannot find symbol
+            this.name = name;
+                ^
+  symbol: variable name
+./Java_repo_mistral/Test_19.java:37: error: cannot find symbol
+        o.inner_data.inner_val = 123;
+         ^
+  symbol:   variable inner_data
+  location: variable o of type Outer
+./Java_repo_mistral/Test_19.java:38: error: cannot find symbol
+        System.arraycopy("MyStruct".toCharArray(), 0, o.name, 0, "MyStruct".length());
+                                                       ^
+  symbol:   variable name
+  location: variable o of type Outer
+./Java_repo_mistral/Test_19.java:39: error: cannot find symbol
+        System.out.println("Name: " + new String(o.name));
+                                                  ^
+  symbol:   variable name
+  location: variable o of type Outer
+./Java_repo_mistral/Test_19.java:40: error: cannot find symbol
+        System.out.println("Inner: " + o.inner_data.inner_val);
+                                        ^
+  symbol:   variable inner_data
+  location: variable o of type Outer
+10 errors
+
+
+Processing file: ./C_repo/test_6.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_6.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_6.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_6.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral/Test_6.java:8: error: incompatible types: int cannot be converted to boolean
+                if (error) {
+                    ^
+1 error
+
+
+Processing file: ./C_repo/test_10.c
+  > Translating function 'createInt'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_10.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_10.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_10.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral/Test_10.java:4: error: incompatible types: int[] cannot be converted to int
+        p[0] = new int[1];
+               ^
+./Java_repo_mistral/Test_10.java:5: error: array required, but int found
+        p[0][0] = 42;
+            ^
+./Java_repo_mistral/Test_10.java:9: error: cannot find symbol
+        IntegerPtr myIntPtr = new IntegerPtr();
+        ^
+  symbol:   class IntegerPtr
+  location: class Test_10
+./Java_repo_mistral/Test_10.java:9: error: cannot find symbol
+        IntegerPtr myIntPtr = new IntegerPtr();
+                                  ^
+  symbol:   class IntegerPtr
+  location: class Test_10
+4 errors
+
+
+Processing file: ./C_repo/test_14.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_14.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_14.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_14.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_7.c
+  > Translating function 'add'...
+  > Translating function 'subtract'...
+  > Translating function 'calculate'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_7.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_7.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_7.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral/Test_7.java:11: error: cannot find symbol
+    public static int calculate(int x, int y, IntBinaryOperator op) {
+                                              ^
+  symbol:   class IntBinaryOperator
+  location: class Test_7
+./Java_repo_mistral/Test_7.java:17: error: cannot find symbol
+        Function<Integer, Integer> add_ptr = i -> i + i;
+        ^
+  symbol:   class Function
+  location: class Test_7
+./Java_repo_mistral/Test_7.java:19: error: cannot find symbol
+        Function<Integer, Integer> subtract = i -> i - i;
+        ^
+  symbol:   class Function
+  location: class Test_7
+3 errors
+
+
+Processing file: ./C_repo/test_1.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_1.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_1.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_1.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_8.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_8.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_8.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_8.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral/Test_8.java:24: error: cannot assign a value to final variable flags
+                flags = (flags & ~1) | (a << 0);
+                ^
+./Java_repo_mistral/Test_8.java:34: error: cannot assign a value to final variable flags
+                flags = (flags & ~(7 << 1)) | ((b << 1) & 7);
+                ^
+./Java_repo_mistral/Test_8.java:44: error: cannot assign a value to final variable flags
+                flags = (flags & ~(127 << 4)) | ((c << 4) & 127);
+                ^
+./Java_repo_mistral/Test_8.java:51: error: cannot find symbol
+        f.a = 1;
+         ^
+  symbol:   variable a
+  location: variable f of type Flags
+./Java_repo_mistral/Test_8.java:52: error: cannot find symbol
+        f.b = 5;
+         ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_mistral/Test_8.java:53: error: cannot find symbol
+        f.c = 100;
+         ^
+  symbol:   variable c
+  location: variable f of type Flags
+./Java_repo_mistral/Test_8.java:54: error: cannot find symbol
+        System.out.println("Flag a: " + f.a);
+                                         ^
+  symbol:   variable a
+  location: variable f of type Flags
+./Java_repo_mistral/Test_8.java:55: error: cannot find symbol
+        System.out.println("Flag b: " + f.b);
+                                         ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_mistral/Test_8.java:56: error: cannot find symbol
+        System.out.println("Flag c: " + f.c);
+                                         ^
+  symbol:   variable c
+  location: variable f of type Flags
+./Java_repo_mistral/Test_8.java:57: error: cannot find symbol
+        f.b = 10;
+         ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_mistral/Test_8.java:58: error: cannot find symbol
+        System.out.println("Flag b (overflow): " + f.b);
+                                                    ^
+  symbol:   variable b
+  location: variable f of type Flags
+11 errors
+
+
+Processing file: ./C_repo/test_11.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral/Test_11.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_11.c
+  > Compiling and running translated Java: ./Java_repo_mistral/Test_11.java
+  > Java FAILED: Java Execution Failed: Exception in thread "main" java.util.UnknownFormatConversionException: Conversion = 'u'
+	at java.base/java.util.Formatter$FormatSpecifier.conversion(Formatter.java:2839)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Formatter.java:2865)
+	at java.base/java.util.Formatter.parse(Formatter.java:2713)
+	at java.base/java.util.Formatter.format(Formatter.java:2655)
+	at java.base/java.io.PrintStream.format(PrintStream.java:1053)
+	at java.base/java.io.PrintStream.printf(PrintStream.java:949)
+	at Test_11.main(Test_11.java:5)
+
+Pipeline finished.

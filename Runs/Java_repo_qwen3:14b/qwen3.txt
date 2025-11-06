@@ -1,0 +1,496 @@
+Logging run to: ./logs/2025-11-05_23-29-01
+Warning: Could not connect to Ollama. Is it running? Error: KeyError: 'name'
+Starting pipeline: ./C_repo -> ./Java_repo_qwen3:14b
+Output directory created/ensured at: ./Java_repo_qwen3:14b
+
+Processing file: ./C_repo/test_16.c
+  > Translating global variable...
+  > Translating function 'increment_global'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_16.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_16.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_16.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_16
+Caused by: java.lang.ClassNotFoundException: Test_16
+
+
+Processing file: ./C_repo/test_18.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_18.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_18.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_18.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_18
+Caused by: java.lang.ClassNotFoundException: Test_18
+
+
+Processing file: ./C_repo/test_5.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_5.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_5.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_5.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_5
+Caused by: java.lang.ClassNotFoundException: Test_5
+
+
+Processing file: ./C_repo/test_17.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_17.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_17.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_17.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_17
+Caused by: java.lang.ClassNotFoundException: Test_17
+
+
+Processing file: ./C_repo/test_20.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_20.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_20.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_20.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_20
+Caused by: java.lang.ClassNotFoundException: Test_20
+
+
+Processing file: ./C_repo/test_9.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'printGeneric'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_9.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_9.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_9.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_9
+Caused by: java.lang.ClassNotFoundException: Test_9
+
+
+Processing file: ./C_repo/test_12.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_12.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_12.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_12.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_12
+Caused by: java.lang.ClassNotFoundException: Test_12
+
+
+Processing file: ./C_repo/test_2.c
+  > Translating struct...
+  > Translating function 'move'...
+  > Translating function 'move_copy'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_2.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_2.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_2.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_2
+Caused by: java.lang.ClassNotFoundException: Test_2
+
+
+Processing file: ./C_repo/test_3.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_3.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_3.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_3.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_3
+Caused by: java.lang.ClassNotFoundException: Test_3
+
+
+Processing file: ./C_repo/test_4.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_4.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_4.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_4.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_4
+Caused by: java.lang.ClassNotFoundException: Test_4
+
+
+Processing file: ./C_repo/test_13.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_13.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_13.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_13.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_qwen3:14b/Test_13.java:3: error: ';' expected
+    This code uses a `goto` to jump back to the label `loop_start` if `i < 5`. This effectively creates a loop that runs while `i < 5`.
+             ^
+./Java_repo_qwen3:14b/Test_13.java:3: error: illegal character: '`'
+    This code uses a `goto` to jump back to the label `loop_start` if `i < 5`. This effectively creates a loop that runs while `i < 5`.
+                     ^
+./Java_repo_qwen3:14b/Test_13.java:3: error: illegal character: '`'
+    This code uses a `goto` to jump back to the label `loop_start` if `i < 5`. This effectively creates a loop that runs while `i < 5`.
+                          ^
+./Java_repo_qwen3:14b/Test_13.java:3: error: ';' expected
+    This code uses a `goto` to jump back to the label `loop_start` if `i < 5`. This effectively creates a loop that runs while `i < 5`.
+                                   ^
+./Java_repo_qwen3:14b/Test_13.java:3: error: ';' expected
+    This code uses a `goto` to jump back to the label `loop_start` if `i < 5`. This effectively creates a loop that runs while `i < 5`.
+                                           ^
+./Java_repo_qwen3:14b/Test_13.java:3: error: illegal character: '`'
+    This code uses a `goto` to jump back to the label `loop_start` if `i < 5`. This effectively creates a loop that runs while `i < 5`.
+                                                      ^
+./Java_repo_qwen3:14b/Test_13.java:3: error: illegal character: '`'
+    This code uses a `goto` to jump back to the label `loop_start` if `i < 5`. This effectively creates a loop that runs while `i < 5`.
+                                                                 ^
+./Java_repo_qwen3:14b/Test_13.java:3: error: illegal character: '`'
+    This code uses a `goto` to jump back to the label `loop_start` if `i < 5`. This effectively creates a loop that runs while `i < 5`.
+                                                                      ^
+./Java_repo_qwen3:14b/Test_13.java:3: error: illegal start of type
+    This code uses a `goto` to jump back to the label `loop_start` if `i < 5`. This effectively creates a loop that runs while `i < 5`.
+                                                                           ^
+./Java_repo_qwen3:14b/Test_13.java:3: error: illegal character: '`'
+    This code uses a `goto` to jump back to the label `loop_start` if `i < 5`. This effectively creates a loop that runs while `i < 5`.
+                                                                            ^
+./Java_repo_qwen3:14b/Test_13.java:3: error: ';' expected
+    This code uses a `goto` to jump back to the label `loop_start` if `i < 5`. This effectively creates a loop that runs while `i < 5`.
+                                                                                               ^
+./Java_repo_qwen3:14b/Test_13.java:3: error: ';' expected
+    This code uses a `goto` to jump back to the label `loop_start` if `i < 5`. This effectively creates a loop that runs while `i < 5`.
+                                                                                                         ^
+./Java_repo_qwen3:14b/Test_13.java:3: error: ';' expected
+    This code uses a `goto` to jump back to the label `loop_start` if `i < 5`. This effectively creates a loop that runs while `i < 5`.
+                                                                                                                   ^
+./Java_repo_qwen3:14b/Test_13.java:3: error: <identifier> expected
+    This code uses a `goto` to jump back to the label `loop_start` if `i < 5`. This effectively creates a loop that runs while `i < 5`.
+                                                                                                                        ^
+./Java_repo_qwen3:14b/Test_13.java:3: error: illegal character: '`'
+    This code uses a `goto` to jump back to the label `loop_start` if `i < 5`. This effectively creates a loop that runs while `i < 5`.
+                                                                                                                               ^
+./Java_repo_qwen3:14b/Test_13.java:3: error: illegal start of type
+    This code uses a `goto` to jump back to the label `loop_start` if `i < 5`. This effectively creates a loop that runs while `i < 5`.
+                                                                                                                                    ^
+./Java_repo_qwen3:14b/Test_13.java:3: error: illegal character: '`'
+    This code uses a `goto` to jump back to the label `loop_start` if `i < 5`. This effectively creates a loop that runs while `i < 5`.
+                                                                                                                                     ^
+./Java_repo_qwen3:14b/Test_13.java:7: error: illegal character: '#'
+    ### 🔄 Translation into Java with Proper Restructuring:
+    ^
+./Java_repo_qwen3:14b/Test_13.java:7: error: illegal character: '#'
+    ### 🔄 Translation into Java with Proper Restructuring:
+     ^
+./Java_repo_qwen3:14b/Test_13.java:7: error: illegal character: '#'
+    ### 🔄 Translation into Java with Proper Restructuring:
+      ^
+./Java_repo_qwen3:14b/Test_13.java:7: error: illegal character: '\ud83d\udd04'
+    ### 🔄 Translation into Java with Proper Restructuring:
+        ^
+./Java_repo_qwen3:14b/Test_13.java:7: error: ';' expected
+    ### 🔄 Translation into Java with Proper Restructuring:
+                           ^
+./Java_repo_qwen3:14b/Test_13.java:7: error: ';' expected
+    ### 🔄 Translation into Java with Proper Restructuring:
+                                     ^
+./Java_repo_qwen3:14b/Test_13.java:7: error: ';' expected
+    ### 🔄 Translation into Java with Proper Restructuring:
+                                                          ^
+./Java_repo_qwen3:14b/Test_13.java:9: error: ';' expected
+    We will restructure the loop using a `do-while` loop with a `break` to simulate the behavior of the `goto`:
+           ^
+./Java_repo_qwen3:14b/Test_13.java:9: error: ';' expected
+    We will restructure the loop using a `do-while` loop with a `break` to simulate the behavior of the `goto`:
+                           ^
+./Java_repo_qwen3:14b/Test_13.java:9: error: ';' expected
+    We will restructure the loop using a `do-while` loop with a `break` to simulate the behavior of the `goto`:
+                                      ^
+./Java_repo_qwen3:14b/Test_13.java:9: error: illegal character: '`'
+    We will restructure the loop using a `do-while` loop with a `break` to simulate the behavior of the `goto`:
+                                         ^
+./Java_repo_qwen3:14b/Test_13.java:9: error: illegal character: '`'
+    We will restructure the loop using a `do-while` loop with a `break` to simulate the behavior of the `goto`:
+                                                  ^
+./Java_repo_qwen3:14b/Test_13.java:9: error: ';' expected
+    We will restructure the loop using a `do-while` loop with a `break` to simulate the behavior of the `goto`:
+                                                             ^
+./Java_repo_qwen3:14b/Test_13.java:9: error: illegal character: '`'
+    We will restructure the loop using a `do-while` loop with a `break` to simulate the behavior of the `goto`:
+                                                                ^
+./Java_repo_qwen3:14b/Test_13.java:9: error: illegal character: '`'
+    We will restructure the loop using a `do-while` loop with a `break` to simulate the behavior of the `goto`:
+                                                                      ^
+./Java_repo_qwen3:14b/Test_13.java:9: error: ';' expected
+    We will restructure the loop using a `do-while` loop with a `break` to simulate the behavior of the `goto`:
+                                                                                   ^
+./Java_repo_qwen3:14b/Test_13.java:9: error: ';' expected
+    We will restructure the loop using a `do-while` loop with a `break` to simulate the behavior of the `goto`:
+                                                                                                ^
+./Java_repo_qwen3:14b/Test_13.java:9: error: illegal character: '`'
+    We will restructure the loop using a `do-while` loop with a `break` to simulate the behavior of the `goto`:
+                                                                                                        ^
+./Java_repo_qwen3:14b/Test_13.java:9: error: illegal character: '`'
+    We will restructure the loop using a `do-while` loop with a `break` to simulate the behavior of the `goto`:
+                                                                                                             ^
+36 errors
+
+
+Processing file: ./C_repo/test_15.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_15.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_15.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_15.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_15
+Caused by: java.lang.ClassNotFoundException: Test_15
+
+
+Processing file: ./C_repo/test_19.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_19.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_19.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_19.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_qwen3:14b/Test_19.java:35: error: incompatible types: String cannot be converted to char[]
+        o.name = "MyStruct";
+                 ^
+1 error
+
+
+Processing file: ./C_repo/test_6.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_6.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_6.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_6.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_6
+Caused by: java.lang.ClassNotFoundException: Test_6
+
+
+Processing file: ./C_repo/test_10.c
+  > Translating function 'createInt'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_10.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_10.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_10.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_qwen3:14b/Test_10.java:12: error: incompatible types: int[] cannot be converted to Integer[]
+            createInt(myIntPtr);
+                      ^
+Note: ./Java_repo_qwen3:14b/Test_10.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+Processing file: ./C_repo/test_14.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_14.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_14.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_14.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_qwen3:14b/Test_14.java:3: error: illegal start of type
+    - A `char` array `dest` is initialized with space for 50 characters.
+    ^
+./Java_repo_qwen3:14b/Test_14.java:3: error: illegal character: '`'
+    - A `char` array `dest` is initialized with space for 50 characters.
+        ^
+./Java_repo_qwen3:14b/Test_14.java:3: error: illegal character: '`'
+    - A `char` array `dest` is initialized with space for 50 characters.
+             ^
+./Java_repo_qwen3:14b/Test_14.java:3: error: illegal character: '`'
+    - A `char` array `dest` is initialized with space for 50 characters.
+                     ^
+./Java_repo_qwen3:14b/Test_14.java:3: error: illegal character: '`'
+    - A `char` array `dest` is initialized with space for 50 characters.
+                          ^
+./Java_repo_qwen3:14b/Test_14.java:3: error: ';' expected
+    - A `char` array `dest` is initialized with space for 50 characters.
+                                          ^
+./Java_repo_qwen3:14b/Test_14.java:3: error: ';' expected
+    - A `char` array `dest` is initialized with space for 50 characters.
+                                                     ^
+./Java_repo_qwen3:14b/Test_14.java:3: error: <identifier> expected
+    - A `char` array `dest` is initialized with space for 50 characters.
+                                                                        ^
+./Java_repo_qwen3:14b/Test_14.java:4: error: illegal character: '`'
+    - `strcpy(dest, "Hello ")` copies the string `"Hello "` into `dest`.
+      ^
+./Java_repo_qwen3:14b/Test_14.java:4: error: invalid method declaration; return type required
+    - `strcpy(dest, "Hello ")` copies the string `"Hello "` into `dest`.
+       ^
+./Java_repo_qwen3:14b/Test_14.java:4: error: <identifier> expected
+    - `strcpy(dest, "Hello ")` copies the string `"Hello "` into `dest`.
+                  ^
+./Java_repo_qwen3:14b/Test_14.java:4: error: illegal start of type
+    - `strcpy(dest, "Hello ")` copies the string `"Hello "` into `dest`.
+                    ^
+./Java_repo_qwen3:14b/Test_14.java:4: error: illegal character: '`'
+    - `strcpy(dest, "Hello ")` copies the string `"Hello "` into `dest`.
+                             ^
+./Java_repo_qwen3:14b/Test_14.java:4: error: illegal character: '`'
+    - `strcpy(dest, "Hello ")` copies the string `"Hello "` into `dest`.
+                                                 ^
+./Java_repo_qwen3:14b/Test_14.java:4: error: illegal character: '`'
+    - `strcpy(dest, "Hello ")` copies the string `"Hello "` into `dest`.
+                                                          ^
+./Java_repo_qwen3:14b/Test_14.java:4: error: illegal character: '`'
+    - `strcpy(dest, "Hello ")` copies the string `"Hello "` into `dest`.
+                                                                 ^
+./Java_repo_qwen3:14b/Test_14.java:4: error: illegal character: '`'
+    - `strcpy(dest, "Hello ")` copies the string `"Hello "` into `dest`.
+                                                                      ^
+./Java_repo_qwen3:14b/Test_14.java:5: error: illegal character: '`'
+    - `strcat(dest, src)` appends the string `src` (i.e., `"World"`) to `dest`.
+      ^
+./Java_repo_qwen3:14b/Test_14.java:5: error: illegal character: '`'
+    - `strcat(dest, src)` appends the string `src` (i.e., `"World"`) to `dest`.
+                        ^
+./Java_repo_qwen3:14b/Test_14.java:5: error: illegal character: '`'
+    - `strcat(dest, src)` appends the string `src` (i.e., `"World"`) to `dest`.
+                                             ^
+./Java_repo_qwen3:14b/Test_14.java:5: error: illegal character: '`'
+    - `strcat(dest, src)` appends the string `src` (i.e., `"World"`) to `dest`.
+                                                 ^
+./Java_repo_qwen3:14b/Test_14.java:5: error: illegal character: '`'
+    - `strcat(dest, src)` appends the string `src` (i.e., `"World"`) to `dest`.
+                                                          ^
+./Java_repo_qwen3:14b/Test_14.java:5: error: illegal character: '`'
+    - `strcat(dest, src)` appends the string `src` (i.e., `"World"`) to `dest`.
+                                                                  ^
+./Java_repo_qwen3:14b/Test_14.java:5: error: illegal character: '`'
+    - `strcat(dest, src)` appends the string `src` (i.e., `"World"`) to `dest`.
+                                                                        ^
+./Java_repo_qwen3:14b/Test_14.java:5: error: illegal character: '`'
+    - `strcat(dest, src)` appends the string `src` (i.e., `"World"`) to `dest`.
+                                                                             ^
+./Java_repo_qwen3:14b/Test_14.java:6: error: illegal character: '`'
+    - The final string becomes `"Hello World"`.
+                               ^
+./Java_repo_qwen3:14b/Test_14.java:6: error: illegal character: '`'
+    - The final string becomes `"Hello World"`.
+                                             ^
+./Java_repo_qwen3:14b/Test_14.java:7: error: ';' expected
+    - The length of the string is printed using `%lu`, which in C is used for an `unsigned long`.
+                ^
+./Java_repo_qwen3:14b/Test_14.java:7: error: ';' expected
+    - The length of the string is printed using `%lu`, which in C is used for an `unsigned long`.
+                       ^
+./Java_repo_qwen3:14b/Test_14.java:7: error: ';' expected
+    - The length of the string is printed using `%lu`, which in C is used for an `unsigned long`.
+                                 ^
+./Java_repo_qwen3:14b/Test_14.java:7: error: illegal character: '`'
+    - The length of the string is printed using `%lu`, which in C is used for an `unsigned long`.
+                                                ^
+./Java_repo_qwen3:14b/Test_14.java:7: error: illegal character: '`'
+    - The length of the string is printed using `%lu`, which in C is used for an `unsigned long`.
+                                                    ^
+./Java_repo_qwen3:14b/Test_14.java:7: error: ';' expected
+    - The length of the string is printed using `%lu`, which in C is used for an `unsigned long`.
+                                                               ^
+./Java_repo_qwen3:14b/Test_14.java:7: error: ';' expected
+    - The length of the string is printed using `%lu`, which in C is used for an `unsigned long`.
+                                                                    ^
+./Java_repo_qwen3:14b/Test_14.java:7: error: <identifier> expected
+    - The length of the string is printed using `%lu`, which in C is used for an `unsigned long`.
+                                                                         ^
+./Java_repo_qwen3:14b/Test_14.java:7: error: illegal character: '`'
+    - The length of the string is printed using `%lu`, which in C is used for an `unsigned long`.
+                                                                                 ^
+./Java_repo_qwen3:14b/Test_14.java:7: error: <identifier> expected
+    - The length of the string is printed using `%lu`, which in C is used for an `unsigned long`.
+                                                                                          ^
+./Java_repo_qwen3:14b/Test_14.java:7: error: illegal character: '`'
+    - The length of the string is printed using `%lu`, which in C is used for an `unsigned long`.
+                                                                                               ^
+./Java_repo_qwen3:14b/Test_14.java:11: error: illegal character: '#'
+    ### 🔄 **Java Equivalent Translation:**
+    ^
+./Java_repo_qwen3:14b/Test_14.java:11: error: illegal character: '#'
+    ### 🔄 **Java Equivalent Translation:**
+     ^
+./Java_repo_qwen3:14b/Test_14.java:11: error: illegal character: '#'
+    ### 🔄 **Java Equivalent Translation:**
+      ^
+./Java_repo_qwen3:14b/Test_14.java:11: error: illegal character: '\ud83d\udd04'
+    ### 🔄 **Java Equivalent Translation:**
+        ^
+./Java_repo_qwen3:14b/Test_14.java:11: error: ';' expected
+    ### 🔄 **Java Equivalent Translation:**
+                            ^
+./Java_repo_qwen3:14b/Test_14.java:11: error: <identifier> expected
+    ### 🔄 **Java Equivalent Translation:**
+                                        ^
+44 errors
+
+
+Processing file: ./C_repo/test_7.c
+  > Translating function 'add'...
+  > Translating function 'subtract'...
+  > Translating function 'calculate'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_7.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_7.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_7.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_qwen3:14b/Test_7.java:12: error: cannot find symbol
+        java.util.function.BiFunction<Integer, Integer, Integer> addPtr = Add::add;
+                                                                          ^
+  symbol:   variable Add
+  location: class Test_7
+./Java_repo_qwen3:14b/Test_7.java:14: error: cannot find symbol
+        System.out.printf("Subtract: %d\n", calculate(10, 5, Subtract::subtract));
+                                                             ^
+  symbol:   variable Subtract
+  location: class Test_7
+2 errors
+
+
+Processing file: ./C_repo/test_1.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_1.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_1.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_1.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_1
+Caused by: java.lang.ClassNotFoundException: Test_1
+
+
+Processing file: ./C_repo/test_8.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_8.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_8.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_8.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_8
+Caused by: java.lang.ClassNotFoundException: Test_8
+
+
+Processing file: ./C_repo/test_11.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen3:14b/Test_11.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_11.c
+  > Compiling and running translated Java: ./Java_repo_qwen3:14b/Test_11.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_11
+Caused by: java.lang.ClassNotFoundException: Test_11
+
+Pipeline finished.

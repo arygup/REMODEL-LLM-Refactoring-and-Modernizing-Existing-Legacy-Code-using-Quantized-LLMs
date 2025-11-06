@@ -1,0 +1,299 @@
+Logging run to: ./logs/2025-11-06_12-03-14
+Warning: Could not connect to Ollama. Is it running? Error: KeyError: 'name'
+Starting pipeline: ./C_repo -> ./Java_repo_codeqwen
+Output directory created/ensured at: ./Java_repo_codeqwen
+
+Processing file: ./C_repo/test_16.c
+  > Translating global variable...
+  > LLM translation failed for 'global': model 'codeqwen' not found (status code: 404)
+  > Translating function 'increment_global'...
+  > LLM translation failed for 'increment_global': model 'codeqwen' not found (status code: 404)
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_16.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_16.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_16.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_16, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_18.c
+  > Translating struct...
+  > LLM translation failed for 'struct': model 'codeqwen' not found (status code: 404)
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_18.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_18.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_18.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_18, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_5.c
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_5.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_5.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_5.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_5, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_17.c
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_17.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_17.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_17.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_17, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_20.c
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_20.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_20.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_20.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_20, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_9.c
+  > Translating struct...
+  > LLM translation failed for 'struct': model 'codeqwen' not found (status code: 404)
+  > Translating struct...
+  > LLM translation failed for 'struct': model 'codeqwen' not found (status code: 404)
+  > Translating function 'printGeneric'...
+  > LLM translation failed for 'printGeneric': model 'codeqwen' not found (status code: 404)
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_9.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_9.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_9.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_9, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_12.c
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_12.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_12.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_12.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_12, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_2.c
+  > Translating struct...
+  > LLM translation failed for 'struct': model 'codeqwen' not found (status code: 404)
+  > Translating function 'move'...
+  > LLM translation failed for 'move': model 'codeqwen' not found (status code: 404)
+  > Translating function 'move_copy'...
+  > LLM translation failed for 'move_copy': model 'codeqwen' not found (status code: 404)
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_2.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_2.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_2.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_2, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_3.c
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_3.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_3.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_3.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_3, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_4.c
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_4.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_4.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_4.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_4, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_13.c
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_13.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_13.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_13.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_13, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_15.c
+  > Translating struct...
+  > LLM translation failed for 'struct': model 'codeqwen' not found (status code: 404)
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_15.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_15.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_15.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_15, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_19.c
+  > Translating struct...
+  > LLM translation failed for 'struct': model 'codeqwen' not found (status code: 404)
+  > Translating struct...
+  > LLM translation failed for 'struct': model 'codeqwen' not found (status code: 404)
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_19.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_19.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_19.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_19, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_6.c
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_6.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_6.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_6.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_6, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_10.c
+  > Translating function 'createInt'...
+  > LLM translation failed for 'createInt': model 'codeqwen' not found (status code: 404)
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_10.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_10.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_10.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_10, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_14.c
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_14.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_14.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_14.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_14, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_7.c
+  > Translating function 'add'...
+  > LLM translation failed for 'add': model 'codeqwen' not found (status code: 404)
+  > Translating function 'subtract'...
+  > LLM translation failed for 'subtract': model 'codeqwen' not found (status code: 404)
+  > Translating function 'calculate'...
+  > LLM translation failed for 'calculate': model 'codeqwen' not found (status code: 404)
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_7.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_7.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_7.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_7, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_1.c
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_1.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_1.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_1.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_1, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_8.c
+  > Translating struct...
+  > LLM translation failed for 'struct': model 'codeqwen' not found (status code: 404)
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_8.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_8.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_8.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_8, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+Processing file: ./C_repo/test_11.c
+  > Translating function 'main'...
+  > LLM translation failed for 'main': model 'codeqwen' not found (status code: 404)
+Successfully saved Java code to ./Java_repo_codeqwen/Test_11.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_11.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_11.java
+  > Java FAILED: Java Execution Failed: Error: Main method not found in class Test_11, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+Pipeline finished.

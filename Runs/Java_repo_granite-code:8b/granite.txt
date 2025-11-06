@@ -1,0 +1,363 @@
+Logging run to: ./logs/2025-11-06_11-52-58
+Warning: Could not connect to Ollama. Is it running? Error: KeyError: 'name'
+Starting pipeline: ./C_repo -> ./Java_repo_granite-code:8b
+Output directory created/ensured at: ./Java_repo_granite-code:8b
+
+Processing file: ./C_repo/test_16.c
+  > Translating global variable...
+  > Translating function 'increment_global'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_16.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_16.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_16.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_granite-code:8b/Test_16.java:6: error: cannot find symbol
+      gCounter += 5;
+      ^
+  symbol:   variable gCounter
+  location: class Test_16
+./Java_repo_granite-code:8b/Test_16.java:11: error: cannot find symbol
+        increment_global();
+        ^
+  symbol:   method increment_global()
+  location: class Test_16
+2 errors
+
+
+Processing file: ./C_repo/test_18.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_18.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_18.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_18.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_granite-code:8b/Test_18.java:28: error: ';' expected
+        struct Data p_struct_data = new struct Data();
+                   ^
+./Java_repo_granite-code:8b/Test_18.java:28: error: '(' or '[' expected
+        struct Data p_struct_data = new struct Data();
+                                               ^
+2 errors
+
+
+Processing file: ./C_repo/test_5.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_5.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_5.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_5.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_5
+Caused by: java.lang.ClassNotFoundException: Test_5
+
+
+Processing file: ./C_repo/test_17.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_17.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_17.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_17.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_17
+Caused by: java.lang.ClassNotFoundException: Test_17
+
+
+Processing file: ./C_repo/test_20.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_20.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_20.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_20.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_granite-code:8b/Test_20.java:24: error: reached end of file while parsing
+}
+ ^
+1 error
+
+
+Processing file: ./C_repo/test_9.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'printGeneric'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_9.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_9.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_9.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_9
+Caused by: java.lang.ClassNotFoundException: Test_9
+
+
+Processing file: ./C_repo/test_12.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_12.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_12.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_12.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_12
+Caused by: java.lang.ClassNotFoundException: Test_12
+
+
+Processing file: ./C_repo/test_2.c
+  > Translating struct...
+  > Translating function 'move'...
+  > Translating function 'move_copy'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_2.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_2.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_2.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_2
+Caused by: java.lang.ClassNotFoundException: Test_2
+
+
+Processing file: ./C_repo/test_3.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_3.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_3.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_3.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_3
+Caused by: java.lang.ClassNotFoundException: Test_3
+
+
+Processing file: ./C_repo/test_4.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_4.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_4.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_4.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_4
+Caused by: java.lang.ClassNotFoundException: Test_4
+
+
+Processing file: ./C_repo/test_13.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_13.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_13.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_13.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_13
+Caused by: java.lang.ClassNotFoundException: Test_13
+
+
+Processing file: ./C_repo/test_15.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_15.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_15.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_15.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_15
+Caused by: java.lang.ClassNotFoundException: Test_15
+
+
+Processing file: ./C_repo/test_19.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_19.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_19.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_19.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_granite-code:8b/Test_19.java:48: error: cannot find symbol
+        return Arrays.copyOf(this.name, this.name.length);
+               ^
+  symbol:   variable Arrays
+  location: class Outer
+./Java_repo_granite-code:8b/Test_19.java:61: error: cannot find symbol
+      o.inner_data.inner_val = 123;
+       ^
+  symbol:   variable inner_data
+  location: variable o of type Outer
+./Java_repo_granite-code:8b/Test_19.java:64: error: cannot find symbol
+      System.out.println("Inner: " + o.inner_data.inner_val);
+                                      ^
+  symbol:   variable inner_data
+  location: variable o of type Outer
+3 errors
+
+
+Processing file: ./C_repo/test_6.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_6.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_6.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_6.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_6
+Caused by: java.lang.ClassNotFoundException: Test_6
+
+
+Processing file: ./C_repo/test_10.c
+  > Translating function 'createInt'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_10.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_10.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_10.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_granite-code:8b/Test_10.java:4: error: integer number too large
+            p[0] = (long) (int) (Math.random() * 2147483648); // Java's int range is -2147483648 to 2147483647
+                                                 ^
+1 error
+
+
+Processing file: ./C_repo/test_14.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_14.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_14.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_14.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_14
+Caused by: java.lang.ClassNotFoundException: Test_14
+
+
+Processing file: ./C_repo/test_7.c
+  > Translating function 'add'...
+  > Translating function 'subtract'...
+  > Translating function 'calculate'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_7.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_7.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_7.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_granite-code:8b/Test_7.java:16: error: ';' expected
+        int add(int a, int b) {
+               ^
+./Java_repo_granite-code:8b/Test_7.java:16: error: <identifier> expected
+        int add(int a, int b) {
+                      ^
+./Java_repo_granite-code:8b/Test_7.java:16: error: ';' expected
+        int add(int a, int b) {
+                            ^
+./Java_repo_granite-code:8b/Test_7.java:20: error: ';' expected
+        int subtract(int a, int b) {
+                    ^
+./Java_repo_granite-code:8b/Test_7.java:20: error: <identifier> expected
+        int subtract(int a, int b) {
+                           ^
+./Java_repo_granite-code:8b/Test_7.java:20: error: ';' expected
+        int subtract(int a, int b) {
+                                 ^
+./Java_repo_granite-code:8b/Test_7.java:24: error: ';' expected
+        long calculate(long x, long y, long (*func)(long, long)) {
+                      ^
+./Java_repo_granite-code:8b/Test_7.java:24: error: <identifier> expected
+        long calculate(long x, long y, long (*func)(long, long)) {
+                              ^
+./Java_repo_granite-code:8b/Test_7.java:24: error: <identifier> expected
+        long calculate(long x, long y, long (*func)(long, long)) {
+                                      ^
+./Java_repo_granite-code:8b/Test_7.java:24: error: not a statement
+        long calculate(long x, long y, long (*func)(long, long)) {
+                                       ^
+./Java_repo_granite-code:8b/Test_7.java:24: error: ';' expected
+        long calculate(long x, long y, long (*func)(long, long)) {
+                                           ^
+./Java_repo_granite-code:8b/Test_7.java:24: error: not a statement
+        long calculate(long x, long y, long (*func)(long, long)) {
+                                              ^
+./Java_repo_granite-code:8b/Test_7.java:24: error: ';' expected
+        long calculate(long x, long y, long (*func)(long, long)) {
+                                                  ^
+./Java_repo_granite-code:8b/Test_7.java:24: error: not a statement
+        long calculate(long x, long y, long (*func)(long, long)) {
+                                                    ^
+./Java_repo_granite-code:8b/Test_7.java:24: error: ';' expected
+        long calculate(long x, long y, long (*func)(long, long)) {
+                                                        ^
+./Java_repo_granite-code:8b/Test_7.java:24: error: not a statement
+        long calculate(long x, long y, long (*func)(long, long)) {
+                                                          ^
+./Java_repo_granite-code:8b/Test_7.java:24: error: ';' expected
+        long calculate(long x, long y, long (*func)(long, long)) {
+                                                              ^
+17 errors
+
+
+Processing file: ./C_repo/test_1.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_1.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_1.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_1.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_1
+Caused by: java.lang.ClassNotFoundException: Test_1
+
+
+Processing file: ./C_repo/test_8.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_8.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_8.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_8.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_granite-code:8b/Test_8.java:47: error: cannot find symbol
+            f.a = 1;
+             ^
+  symbol:   variable a
+  location: variable f of type Flags
+./Java_repo_granite-code:8b/Test_8.java:48: error: cannot find symbol
+            f.b = 5;
+             ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_granite-code:8b/Test_8.java:49: error: cannot find symbol
+            f.c = 100;
+             ^
+  symbol:   variable c
+  location: variable f of type Flags
+./Java_repo_granite-code:8b/Test_8.java:50: error: cannot find symbol
+            System.out.printf("Flag a: %u\n", f.a);
+                                               ^
+  symbol:   variable a
+  location: variable f of type Flags
+./Java_repo_granite-code:8b/Test_8.java:51: error: cannot find symbol
+            System.out.printf("Flag b: %u\n", f.b);
+                                               ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_granite-code:8b/Test_8.java:52: error: cannot find symbol
+            System.out.printf("Flag c: %u\n", f.c);
+                                               ^
+  symbol:   variable c
+  location: variable f of type Flags
+./Java_repo_granite-code:8b/Test_8.java:53: error: cannot find symbol
+            f.b = 10;
+             ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_granite-code:8b/Test_8.java:54: error: cannot find symbol
+            System.out.printf("Flag b (overflow): %u\n", f.b);
+                                                          ^
+  symbol:   variable b
+  location: variable f of type Flags
+8 errors
+
+
+Processing file: ./C_repo/test_11.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_granite-code:8b/Test_11.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_11.c
+  > Compiling and running translated Java: ./Java_repo_granite-code:8b/Test_11.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_11
+Caused by: java.lang.ClassNotFoundException: Test_11
+
+Pipeline finished.

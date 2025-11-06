@@ -1,0 +1,18 @@
+public class Test_16 {
+
+    public static int gCounter = 10;
+
+    public static void incrementGlobal() {
+        gCounter += 5;
+    }
+
+    public static void main(String[] args) {
+        int g_counter = 10;
+        System.out.printf("Global: %d\n", g_counter);
+        increment_global(g_counter);
+        System.out.printf("Global after func: %d\n", g_counter);
+        g_counter = 1;
+        System.out.printf("Global after main: %d\n", g_counter);
+    }
+
+}

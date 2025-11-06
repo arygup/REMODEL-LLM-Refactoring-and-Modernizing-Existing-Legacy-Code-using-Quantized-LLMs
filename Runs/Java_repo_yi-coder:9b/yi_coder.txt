@@ -1,0 +1,297 @@
+Logging run to: ./logs/2025-11-06_11-54-40
+Warning: Could not connect to Ollama. Is it running? Error: KeyError: 'name'
+Starting pipeline: ./C_repo -> ./Java_repo_yi-coder:9b
+Output directory created/ensured at: ./Java_repo_yi-coder:9b
+
+Processing file: ./C_repo/test_16.c
+  > Translating global variable...
+  > Translating function 'increment_global'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_16.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_16.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_16.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_yi-coder:9b/Test_16.java:6: error: cannot find symbol
+        gCounter += 5;
+        ^
+  symbol:   variable gCounter
+  location: class Test_16
+./Java_repo_yi-coder:9b/Test_16.java:11: error: cannot find symbol
+      increment_global();
+      ^
+  symbol:   method increment_global()
+  location: class Test_16
+2 errors
+
+
+Processing file: ./C_repo/test_18.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_18.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_18.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_18.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_18
+Caused by: java.lang.ClassNotFoundException: Test_18
+
+
+Processing file: ./C_repo/test_5.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_5.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_5.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_5.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_5
+Caused by: java.lang.ClassNotFoundException: Test_5
+
+
+Processing file: ./C_repo/test_17.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_17.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_17.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_17.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_17
+Caused by: java.lang.ClassNotFoundException: Test_17
+
+
+Processing file: ./C_repo/test_20.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_20.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_20.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_20.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_20
+Caused by: java.lang.ClassNotFoundException: Test_20
+
+
+Processing file: ./C_repo/test_9.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'printGeneric'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_9.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_9.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_9.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_yi-coder:9b/Test_9.java:47: error: non-static variable this cannot be referenced from a static context
+        TypeA a = new TypeA();
+                  ^
+1 error
+
+
+Processing file: ./C_repo/test_12.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_12.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_12.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_12.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_yi-coder:9b/Test_12.java:4: error: cannot find symbol
+        Status s = Status.STOPPED;
+        ^
+  symbol:   class Status
+  location: class Test_12
+./Java_repo_yi-coder:9b/Test_12.java:4: error: cannot find symbol
+        Status s = Status.STOPPED;
+                   ^
+  symbol:   variable Status
+  location: class Test_12
+./Java_repo_yi-coder:9b/Test_12.java:8: error: package Status does not exist
+        if (Status.RUNNING.getValue() == sValue) {
+                  ^
+3 errors
+
+
+Processing file: ./C_repo/test_2.c
+  > Translating struct...
+  > Translating function 'move'...
+  > Translating function 'move_copy'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_2.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_2.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_2.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_yi-coder:9b/Test_2.java:33: error: cannot find symbol
+        move_copy(p1);
+        ^
+  symbol:   method move_copy(Point)
+  location: class Test_2
+1 error
+
+
+Processing file: ./C_repo/test_3.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_3.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_3.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_3.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_3
+Caused by: java.lang.ClassNotFoundException: Test_3
+
+
+Processing file: ./C_repo/test_4.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_4.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_4.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_4.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_4
+Caused by: java.lang.ClassNotFoundException: Test_4
+
+
+Processing file: ./C_repo/test_13.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_13.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_13.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_13.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_13
+Caused by: java.lang.ClassNotFoundException: Test_13
+
+
+Processing file: ./C_repo/test_15.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_15.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_15.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_15.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_15
+Caused by: java.lang.ClassNotFoundException: Test_15
+
+
+Processing file: ./C_repo/test_19.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_19.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_19.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_19.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_yi-coder:9b/Test_19.java:29: error: non-static variable this cannot be referenced from a static context
+            this.innerData = new Inner(other.innerData);
+                             ^
+1 error
+
+
+Processing file: ./C_repo/test_6.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_6.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_6.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_6.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_6
+Caused by: java.lang.ClassNotFoundException: Test_6
+
+
+Processing file: ./C_repo/test_10.c
+  > Translating function 'createInt'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_10.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_10.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_10.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_yi-coder:9b/Test_10.java:3: error: cannot find symbol
+    public static void createInt(Wrapper<Integer> p) {
+                                 ^
+  symbol:   class Wrapper
+  location: class Test_10
+./Java_repo_yi-coder:9b/Test_10.java:8: error: cannot find symbol
+            IntWrapper myIntPtr = new IntWrapper();
+            ^
+  symbol:   class IntWrapper
+  location: class Test_10
+./Java_repo_yi-coder:9b/Test_10.java:8: error: cannot find symbol
+            IntWrapper myIntPtr = new IntWrapper();
+                                      ^
+  symbol:   class IntWrapper
+  location: class Test_10
+3 errors
+
+
+Processing file: ./C_repo/test_14.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_14.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_14.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_14.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_14
+Caused by: java.lang.ClassNotFoundException: Test_14
+
+
+Processing file: ./C_repo/test_7.c
+  > Translating function 'add'...
+  > Translating function 'subtract'...
+  > Translating function 'calculate'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_7.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_7.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_7.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_yi-coder:9b/Test_7.java:11: error: cannot find symbol
+    public static int calculate(int x, int y, Operation op) {
+                                              ^
+  symbol:   class Operation
+  location: class Test_7
+./Java_repo_yi-coder:9b/Test_7.java:24: error: method add(int,int) is already defined in class Test_7
+    public static int add(int a, int b) {
+                      ^
+./Java_repo_yi-coder:9b/Test_7.java:28: error: method subtract(int,int) is already defined in class Test_7
+    public static int subtract(int a, int b) {
+                      ^
+3 errors
+
+
+Processing file: ./C_repo/test_1.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_1.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_1.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_1.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_1
+Caused by: java.lang.ClassNotFoundException: Test_1
+
+
+Processing file: ./C_repo/test_8.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_8.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_8.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_8.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_yi-coder:9b/Test_8.java:26: error: invalid method declaration; return type required
+        public Flgs(int a, int b, int c) {
+               ^
+1 error
+
+
+Processing file: ./C_repo/test_11.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_yi-coder:9b/Test_11.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_11.c
+  > Compiling and running translated Java: ./Java_repo_yi-coder:9b/Test_11.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_11
+Caused by: java.lang.ClassNotFoundException: Test_11
+
+Pipeline finished.

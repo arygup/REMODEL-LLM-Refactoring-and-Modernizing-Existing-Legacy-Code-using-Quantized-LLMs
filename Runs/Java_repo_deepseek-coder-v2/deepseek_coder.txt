@@ -1,0 +1,350 @@
+Logging run to: ./logs/2025-11-05_22-13-24
+Warning: Could not connect to Ollama. Is it running? Error: KeyError: 'name'
+Starting pipeline: ./C_repo -> ./Java_repo_deepseek-coder-v2
+Output directory created/ensured at: ./Java_repo_deepseek-coder-v2
+
+Processing file: ./C_repo/test_16.c
+  > Translating global variable...
+  > Translating function 'increment_global'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_16.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_16.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_16.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_18.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_18.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_18.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_18.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_deepseek-coder-v2/Test_18.java:28: error: non-static method get() cannot be referenced from a static context
+      System.out.printf("Size of Data: %d\n", java.lang.ref.Reference.get().getClass().getDeclaredField("theData").getType().getComponentType().getSize());
+                                                                     ^
+  where T is a type-variable:
+    T extends Object declared in class Reference
+./Java_repo_deepseek-coder-v2/Test_18.java:28: error: cannot find symbol
+      System.out.printf("Size of Data: %d\n", java.lang.ref.Reference.get().getClass().getDeclaredField("theData").getType().getComponentType().getSize());
+                                                                                                                                               ^
+  symbol:   method getSize()
+  location: class Class<CAP#1>
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Object from capture of ?
+./Java_repo_deepseek-coder-v2/Test_18.java:29: error: non-static method get() cannot be referenced from a static context
+      System.out.printf("Size of Data*: %d\n", java.lang.ref.Reference.get().getClass().getDeclaredField("theData").getType().getSize());
+                                                                      ^
+  where T is a type-variable:
+    T extends Object declared in class Reference
+./Java_repo_deepseek-coder-v2/Test_18.java:29: error: cannot find symbol
+      System.out.printf("Size of Data*: %d\n", java.lang.ref.Reference.get().getClass().getDeclaredField("theData").getType().getSize());
+                                                                                                                             ^
+  symbol:   method getSize()
+  location: class Class<CAP#1>
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Object from capture of ?
+4 errors
+
+
+Processing file: ./C_repo/test_5.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_5.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_5.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_5.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_17.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_17.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_17.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_17.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_20.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_20.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_20.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_20.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_9.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'printGeneric'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_9.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_9.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_9.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_deepseek-coder-v2/Test_9.java:39: error: ';' expected
+            struct TypeA a = (struct TypeA) data;
+                        ^
+./Java_repo_deepseek-coder-v2/Test_9.java:39: error: -> expected
+            struct TypeA a = (struct TypeA) data;
+                                           ^
+./Java_repo_deepseek-coder-v2/Test_9.java:42: error: ';' expected
+            struct TypeB b = (struct TypeB) data;
+                        ^
+./Java_repo_deepseek-coder-v2/Test_9.java:42: error: -> expected
+            struct TypeB b = (struct TypeB) data;
+                                           ^
+./Java_repo_deepseek-coder-v2/Test_9.java:48: error: ';' expected
+      struct TypeA a = new struct TypeA();
+                  ^
+./Java_repo_deepseek-coder-v2/Test_9.java:48: error: '(' or '[' expected
+      struct TypeA a = new struct TypeA();
+                                  ^
+./Java_repo_deepseek-coder-v2/Test_9.java:50: error: ';' expected
+      struct TypeB b = new struct TypeB();
+                  ^
+./Java_repo_deepseek-coder-v2/Test_9.java:50: error: '(' or '[' expected
+      struct TypeB b = new struct TypeB();
+                                  ^
+8 errors
+
+
+Processing file: ./C_repo/test_12.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_12.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_12.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_12.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_deepseek-coder-v2/Test_12.java:4: error: cannot find symbol
+      int s = STOPPED;
+              ^
+  symbol:   variable STOPPED
+  location: class Test_12
+./Java_repo_deepseek-coder-v2/Test_12.java:6: error: cannot find symbol
+      if (s == RUNNING) {
+               ^
+  symbol:   variable RUNNING
+  location: class Test_12
+2 errors
+
+
+Processing file: ./C_repo/test_2.c
+  > Translating struct...
+  > Translating function 'move'...
+  > Translating function 'move_copy'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_2.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_2.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_2.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_3.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_3.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_3.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_3.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_4.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_4.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_4.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_4.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_13.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_13.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_13.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_13.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_15.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_15.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_15.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_15.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_deepseek-coder-v2/Test_15.java:33: error: cannot find symbol
+        free(itemPtr);
+        ^
+  symbol:   method free(Item)
+  location: class Test_15
+1 error
+
+
+Processing file: ./C_repo/test_19.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_19.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_19.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_19.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_deepseek-coder-v2/Test_19.java:27: error: constructor Inner in class Inner cannot be applied to given types;
+            this.inner_data = new Inner(other.inner_data);
+                              ^
+  required: no arguments
+  found: Inner
+  reason: actual and formal argument lists differ in length
+./Java_repo_deepseek-coder-v2/Test_19.java:47: error: cannot find symbol
+      o.inner_data.inner_val = 123;
+                  ^
+  symbol:   variable inner_val
+  location: variable inner_data of type Inner
+2 errors
+
+
+Processing file: ./C_repo/test_6.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_6.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_6.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_6.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_10.c
+  > Translating function 'createInt'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_10.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_10.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_10.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_deepseek-coder-v2/Test_10.java:10: error: method createInt in class Test_10 cannot be applied to given types;
+      createInt(myIntPtr_array, myIntPtr_index);
+      ^
+  required: int[]
+  found: int[],int
+  reason: actual and formal argument lists differ in length
+./Java_repo_deepseek-coder-v2/Test_10.java:13: error: cannot find symbol
+        free(myIntPtr_array, myIntPtr_index);
+        ^
+  symbol:   method free(int[],int)
+  location: class Test_10
+2 errors
+
+
+Processing file: ./C_repo/test_14.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_14.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_14.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_14.java
+  > Comparing outputs...
+  > FAILURE: Outputs do not match.
+--- C Output ---
+String: Hello World
+Length: 11
+
+--- Java Output ---
+String: Hello World                                       
+Length: 50
+
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_7.c
+  > Translating function 'add'...
+  > Translating function 'subtract'...
+  > Translating function 'calculate'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_7.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_7.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_7.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_deepseek-coder-v2/Test_7.java:16: error: cannot find symbol
+      int add_result = calculate(10, 5, new IntBinaryOperator() {
+                                            ^
+  symbol:   class IntBinaryOperator
+  location: class Test_7
+./Java_repo_deepseek-coder-v2/Test_7.java:23: error: cannot find symbol
+      int subtract_result = calculate(10, 5, new IntBinaryOperator() {
+                                                 ^
+  symbol:   class IntBinaryOperator
+  location: class Test_7
+2 errors
+
+
+Processing file: ./C_repo/test_1.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_1.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_1.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_1.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_8.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_8.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_8.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_8.java
+  > Comparing outputs...
+  > FAILURE: Outputs do not match.
+--- C Output ---
+Flag a: 1
+Flag b: 5
+Flag c: 100
+Flag b (overflow): 2
+
+--- Java Output ---
+Flag a: 1
+Flag b: 5
+Flag c: 100
+Flag b (overflow): 10
+
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_11.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_deepseek-coder-v2/Test_11.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_11.c
+  > Compiling and running translated Java: ./Java_repo_deepseek-coder-v2/Test_11.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+Pipeline finished.

@@ -1,0 +1,355 @@
+Logging run to: ./logs/2025-11-06_00-26-33
+Warning: Could not connect to Ollama. Is it running? Error: KeyError: 'name'
+Starting pipeline: ./C_repo -> ./Java_repo_qwen2.5-coder:7b
+Output directory created/ensured at: ./Java_repo_qwen2.5-coder:7b
+
+Processing file: ./C_repo/test_16.c
+  > Translating global variable...
+  > Translating function 'increment_global'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_16.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_16.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_16.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_qwen2.5-coder:7b/Test_16.java:6: error: cannot assign a value to final variable g_counter
+      g_counter += 5;
+      ^
+./Java_repo_qwen2.5-coder:7b/Test_16.java:11: error: cannot find symbol
+      increment_global();
+      ^
+  symbol:   method increment_global()
+  location: class Test_16
+./Java_repo_qwen2.5-coder:7b/Test_16.java:13: error: cannot assign a value to final variable g_counter
+      g_counter = 1;
+      ^
+3 errors
+
+
+Processing file: ./C_repo/test_18.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_18.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_18.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_18.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_18
+Caused by: java.lang.ClassNotFoundException: Test_18
+
+
+Processing file: ./C_repo/test_5.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_5.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_5.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_5.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_5
+Caused by: java.lang.ClassNotFoundException: Test_5
+
+
+Processing file: ./C_repo/test_17.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_17.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_17.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_17.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_17
+Caused by: java.lang.ClassNotFoundException: Test_17
+
+
+Processing file: ./C_repo/test_20.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_20.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_20.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_20.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_20
+Caused by: java.lang.ClassNotFoundException: Test_20
+
+
+Processing file: ./C_repo/test_9.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'printGeneric'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_9.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_9.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_9.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_qwen2.5-coder:7b/Test_9.java:39: error: cannot find symbol
+        StructTypeA a = (StructTypeA) data;
+        ^
+  symbol:   class StructTypeA
+  location: class Test_9
+./Java_repo_qwen2.5-coder:7b/Test_9.java:39: error: cannot find symbol
+        StructTypeA a = (StructTypeA) data;
+                         ^
+  symbol:   class StructTypeA
+  location: class Test_9
+./Java_repo_qwen2.5-coder:7b/Test_9.java:42: error: cannot find symbol
+        StructTypeB b = (StructTypeB) data;
+        ^
+  symbol:   class StructTypeB
+  location: class Test_9
+./Java_repo_qwen2.5-coder:7b/Test_9.java:42: error: cannot find symbol
+        StructTypeB b = (StructTypeB) data;
+                         ^
+  symbol:   class StructTypeB
+  location: class Test_9
+4 errors
+
+
+Processing file: ./C_repo/test_12.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_12.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_12.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_12.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_qwen2.5-coder:7b/Test_12.java:4: error: cannot find symbol
+      Status s = Status.STOPPED;
+      ^
+  symbol:   class Status
+  location: class Test_12
+./Java_repo_qwen2.5-coder:7b/Test_12.java:4: error: cannot find symbol
+      Status s = Status.STOPPED;
+                 ^
+  symbol:   variable Status
+  location: class Test_12
+./Java_repo_qwen2.5-coder:7b/Test_12.java:5: error: cannot find symbol
+      s = (Status.valueOf(s.name()).ordinal() + 1);
+           ^
+  symbol:   variable Status
+  location: class Test_12
+./Java_repo_qwen2.5-coder:7b/Test_12.java:6: error: cannot find symbol
+      if (s == Status.RUNNING) {
+               ^
+  symbol:   variable Status
+  location: class Test_12
+4 errors
+
+
+Processing file: ./C_repo/test_2.c
+  > Translating struct...
+  > Translating function 'move'...
+  > Translating function 'move_copy'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_2.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_2.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_2.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_2
+Caused by: java.lang.ClassNotFoundException: Test_2
+
+
+Processing file: ./C_repo/test_3.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_3.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_3.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_3.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_3
+Caused by: java.lang.ClassNotFoundException: Test_3
+
+
+Processing file: ./C_repo/test_4.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_4.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_4.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_4.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_4
+Caused by: java.lang.ClassNotFoundException: Test_4
+
+
+Processing file: ./C_repo/test_13.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_13.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_13.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_13.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_13
+Caused by: java.lang.ClassNotFoundException: Test_13
+
+
+Processing file: ./C_repo/test_15.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_15.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_15.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_15.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_15
+Caused by: java.lang.ClassNotFoundException: Test_15
+
+
+Processing file: ./C_repo/test_19.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_19.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_19.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_19.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_19
+Caused by: java.lang.ClassNotFoundException: Test_19
+
+
+Processing file: ./C_repo/test_6.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_6.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_6.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_6.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_qwen2.5-coder:7b/Test_6.java:7: error: incompatible types: int cannot be converted to boolean
+        if (error) {
+            ^
+1 error
+
+
+Processing file: ./C_repo/test_10.c
+  > Translating function 'createInt'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_10.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_10.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_10.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_qwen2.5-coder:7b/Test_10.java:9: error: incompatible types: int cannot be converted to int[]
+      createInt(myIntPtr);
+                ^
+./Java_repo_qwen2.5-coder:7b/Test_10.java:12: error: cannot find symbol
+        free(myIntPtr);
+        ^
+  symbol:   method free(int)
+  location: class Test_10
+Note: ./Java_repo_qwen2.5-coder:7b/Test_10.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+
+Processing file: ./C_repo/test_14.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_14.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_14.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_14.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_14
+Caused by: java.lang.ClassNotFoundException: Test_14
+
+
+Processing file: ./C_repo/test_7.c
+  > Translating function 'add'...
+  > Translating function 'subtract'...
+  > Translating function 'calculate'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_7.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_7.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_7.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_qwen2.5-coder:7b/Test_7.java:11: error: cannot find symbol
+    public static int calculate(int x, int y, IntBinaryOperator op) {
+                                              ^
+  symbol:   class IntBinaryOperator
+  location: class Test_7
+./Java_repo_qwen2.5-coder:7b/Test_7.java:16: error: cannot find symbol
+      BinaryOperation add_ptr = Calculator::add;
+      ^
+  symbol:   class BinaryOperation
+  location: class Test_7
+./Java_repo_qwen2.5-coder:7b/Test_7.java:18: error: cannot find symbol
+      System.out.println("Subtract: " + calculate(10, 5, Calculator::subtract));
+                                                         ^
+  symbol:   variable Calculator
+  location: class Test_7
+3 errors
+
+
+Processing file: ./C_repo/test_1.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_1.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_1.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_1.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_1
+Caused by: java.lang.ClassNotFoundException: Test_1
+
+
+Processing file: ./C_repo/test_8.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_8.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_8.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_8.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_qwen2.5-coder:7b/Test_8.java:56: error: cannot find symbol
+      f.a = 1;
+       ^
+  symbol:   variable a
+  location: variable f of type Flags
+./Java_repo_qwen2.5-coder:7b/Test_8.java:57: error: cannot find symbol
+      f.b = 5 & 0xFFFFFFFFL;
+       ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_qwen2.5-coder:7b/Test_8.java:58: error: cannot find symbol
+      f.c = 100 & 0xFFFFFFFFL;
+       ^
+  symbol:   variable c
+  location: variable f of type Flags
+./Java_repo_qwen2.5-coder:7b/Test_8.java:59: error: cannot find symbol
+      System.out.printf("Flag a: %u\n", f.a);
+                                         ^
+  symbol:   variable a
+  location: variable f of type Flags
+./Java_repo_qwen2.5-coder:7b/Test_8.java:60: error: cannot find symbol
+      System.out.printf("Flag b: %u\n", f.b);
+                                         ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_qwen2.5-coder:7b/Test_8.java:61: error: cannot find symbol
+      System.out.printf("Flag c: %u\n", f.c);
+                                         ^
+  symbol:   variable c
+  location: variable f of type Flags
+./Java_repo_qwen2.5-coder:7b/Test_8.java:62: error: cannot find symbol
+      f.b = 10 & 0xFFFFFFFFL;
+       ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_qwen2.5-coder:7b/Test_8.java:63: error: cannot find symbol
+      System.out.printf("Flag b (overflow): %u\n", f.b);
+                                                    ^
+  symbol:   variable b
+  location: variable f of type Flags
+8 errors
+
+
+Processing file: ./C_repo/test_11.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_qwen2.5-coder:7b/Test_11.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_11.c
+  > Compiling and running translated Java: ./Java_repo_qwen2.5-coder:7b/Test_11.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_11
+Caused by: java.lang.ClassNotFoundException: Test_11
+
+Pipeline finished.

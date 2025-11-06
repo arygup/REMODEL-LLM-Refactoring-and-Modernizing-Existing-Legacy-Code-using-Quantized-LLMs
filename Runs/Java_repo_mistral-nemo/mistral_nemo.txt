@@ -1,0 +1,345 @@
+Logging run to: ./logs/2025-11-05_23-22-21
+Warning: Could not connect to Ollama. Is it running? Error: KeyError: 'name'
+Starting pipeline: ./C_repo -> ./Java_repo_mistral-nemo
+Output directory created/ensured at: ./Java_repo_mistral-nemo
+
+Processing file: ./C_repo/test_16.c
+  > Translating global variable...
+  > Translating function 'increment_global'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_16.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_16.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_16.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral-nemo/Test_16.java:3: error: ';' expected
+    public static final int g_counter = 10
+                                          ^
+1 error
+
+
+Processing file: ./C_repo/test_18.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_18.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_18.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_18.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral-nemo/Test_18.java:26: error: '(' or '[' expected
+      System.out.println("Size of Data*: " + sizeof(new Data*()).BYTES);
+                                                            ^
+./Java_repo_mistral-nemo/Test_18.java:26: error: -> expected
+      System.out.println("Size of Data*: " + sizeof(new Data*()).BYTES);
+                                                               ^
+2 errors
+
+
+Processing file: ./C_repo/test_5.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_5.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_5.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_5.java
+  > Java FAILED: Java Execution Failed: Exception in thread "main" java.util.UnknownFormatConversionException: Conversion = 'u'
+	at java.base/java.util.Formatter$FormatSpecifier.conversion(Formatter.java:2839)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Formatter.java:2865)
+	at java.base/java.util.Formatter.parse(Formatter.java:2713)
+	at java.base/java.util.Formatter.format(Formatter.java:2655)
+	at java.base/java.io.PrintStream.format(PrintStream.java:1053)
+	at java.base/java.io.PrintStream.printf(PrintStream.java:949)
+	at Test_5.main(Test_5.java:5)
+
+
+Processing file: ./C_repo/test_17.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_17.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_17.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_17.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_20.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_20.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_20.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_20.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_9.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'printGeneric'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_9.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_9.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_9.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral-nemo/Test_9.java:41: error: method printGeneric(Object,int) is already defined in class Test_9
+    public static void printGeneric(Object obj, int type) {
+                       ^
+1 error
+
+
+Processing file: ./C_repo/test_12.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_12.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_12.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_12.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral-nemo/Test_12.java:4: error: cannot find symbol
+      Status s = STOPPED;
+      ^
+  symbol:   class Status
+  location: class Test_12
+./Java_repo_mistral-nemo/Test_12.java:4: error: cannot find symbol
+      Status s = STOPPED;
+                 ^
+  symbol:   variable STOPPED
+  location: class Test_12
+./Java_repo_mistral-nemo/Test_12.java:6: error: cannot find symbol
+      if (s == RUNNING)
+               ^
+  symbol:   variable RUNNING
+  location: class Test_12
+3 errors
+
+
+Processing file: ./C_repo/test_2.c
+  > Translating struct...
+  > Translating function 'move'...
+  > Translating function 'move_copy'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_2.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_2.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_2.java
+  > Comparing outputs...
+  > FAILURE: Outputs do not match.
+--- C Output ---
+Original: 10
+Inside move_copy: 110
+After move_copy: 10
+After move: 15
+
+--- Java Output ---
+Original: 10
+Inside move_copy: 110
+After move_copy: 110
+After move: 115
+
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_3.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_3.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_3.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_3.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral-nemo/Test_3.java:9: error: long cannot be dereferenced
+      f = Integer.toUnsignedLong(i).bitCount();
+                                   ^
+1 error
+
+
+Processing file: ./C_repo/test_4.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_4.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_4.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_4.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_13.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_13.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_13.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_13.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral-nemo/Test_13.java:9: error: undefined label: loop_start
+        continue loop_start;
+        ^
+1 error
+
+
+Processing file: ./C_repo/test_15.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_15.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_15.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_15.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_19.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_19.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_19.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_19.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral-nemo/Test_19.java:34: error: class Inner is already defined in class Test_19
+    public static class Inner {
+                  ^
+1 error
+
+
+Processing file: ./C_repo/test_6.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_6.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_6.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_6.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral-nemo/Test_6.java:8: error: undefined label: do_while_loop
+          break do_while_loop;
+          ^
+1 error
+
+
+Processing file: ./C_repo/test_10.c
+  > Translating function 'createInt'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_10.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_10.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_10.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral-nemo/Test_10.java:11: error: incompatible types: int cannot be converted to Integer[]
+      createInt(myIntPtr);
+                ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+Processing file: ./C_repo/test_14.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_14.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_14.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_14.java
+  > Comparing outputs...
+  > FAILURE: Outputs do not match.
+--- C Output ---
+String: Hello World
+Length: 11
+
+--- Java Output ---
+String: Hello W                                           
+Length: 50
+
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_7.c
+  > Translating function 'add'...
+  > Translating function 'subtract'...
+  > Translating function 'calculate'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_7.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_7.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_7.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral-nemo/Test_7.java:11: error: cannot find symbol
+    public static int calculate(int x, int y, IntBinaryOperator op) {
+                                              ^
+  symbol:   class IntBinaryOperator
+  location: class Test_7
+1 error
+
+
+Processing file: ./C_repo/test_1.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_1.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_1.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_1.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_8.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_8.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_8.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_8.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_mistral-nemo/Test_8.java:47: error: cannot find symbol
+      f.a = 1;
+       ^
+  symbol:   variable a
+  location: variable f of type Flags
+./Java_repo_mistral-nemo/Test_8.java:48: error: cannot find symbol
+      f.b = 5;
+       ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_mistral-nemo/Test_8.java:49: error: cannot find symbol
+      f.c = 100;
+       ^
+  symbol:   variable c
+  location: variable f of type Flags
+./Java_repo_mistral-nemo/Test_8.java:50: error: cannot find symbol
+      System.out.println("Flag a: " + Integer.toUnsignedString(f.a));
+                                                                ^
+  symbol:   variable a
+  location: variable f of type Flags
+./Java_repo_mistral-nemo/Test_8.java:51: error: cannot find symbol
+      System.out.println("Flag b: " + Integer.toUnsignedString(f.b));
+                                                                ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_mistral-nemo/Test_8.java:52: error: cannot find symbol
+      System.out.println("Flag c: " + Integer.toUnsignedString(f.c));
+                                                                ^
+  symbol:   variable c
+  location: variable f of type Flags
+./Java_repo_mistral-nemo/Test_8.java:53: error: cannot find symbol
+      f.b = 10;
+       ^
+  symbol:   variable b
+  location: variable f of type Flags
+./Java_repo_mistral-nemo/Test_8.java:54: error: cannot find symbol
+      System.out.println("Flag b (overflow): " + Integer.toUnsignedString(f.b));
+                                                                           ^
+  symbol:   variable b
+  location: variable f of type Flags
+8 errors
+
+
+Processing file: ./C_repo/test_11.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_mistral-nemo/Test_11.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_11.c
+  > Compiling and running translated Java: ./Java_repo_mistral-nemo/Test_11.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+Pipeline finished.

@@ -1,0 +1,279 @@
+Logging run to: ./logs/2025-11-06_00-01-01
+Warning: Could not connect to Ollama. Is it running? Error: KeyError: 'name'
+Starting pipeline: ./C_repo -> ./Java_repo_gemma3:12b
+Output directory created/ensured at: ./Java_repo_gemma3:12b
+
+Processing file: ./C_repo/test_16.c
+  > Translating global variable...
+  > Translating function 'increment_global'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_16.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_16.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_16.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_16
+Caused by: java.lang.ClassNotFoundException: Test_16
+
+
+Processing file: ./C_repo/test_18.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_18.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_18.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_18.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_gemma3:12b/Test_18.java:27: error: cannot find symbol
+        System.out.printf("Size of Data*: %lu\n", (long)Pointer.SIZE);
+                                                        ^
+  symbol:   variable Pointer
+  location: class Test_18
+1 error
+
+
+Processing file: ./C_repo/test_5.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_5.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_5.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_5.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_5
+Caused by: java.lang.ClassNotFoundException: Test_5
+
+
+Processing file: ./C_repo/test_17.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_17.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_17.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_17.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_17
+Caused by: java.lang.ClassNotFoundException: Test_17
+
+
+Processing file: ./C_repo/test_20.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_20.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_20.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_20.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_20
+Caused by: java.lang.ClassNotFoundException: Test_20
+
+
+Processing file: ./C_repo/test_9.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'printGeneric'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_9.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_9.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_9.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_gemma3:12b/Test_9.java:43: error: method printGeneric(Object,int) is already defined in class Test_9
+    public static void printGeneric(Object a, int type) {
+                       ^
+1 error
+
+
+Processing file: ./C_repo/test_12.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_12.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_12.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_12.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_12
+Caused by: java.lang.ClassNotFoundException: Test_12
+
+
+Processing file: ./C_repo/test_2.c
+  > Translating struct...
+  > Translating function 'move'...
+  > Translating function 'move_copy'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_2.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_2.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_2.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_2
+Caused by: java.lang.ClassNotFoundException: Test_2
+
+
+Processing file: ./C_repo/test_3.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_3.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_3.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_3.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_3
+Caused by: java.lang.ClassNotFoundException: Test_3
+
+
+Processing file: ./C_repo/test_4.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_4.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_4.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_4.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_4
+Caused by: java.lang.ClassNotFoundException: Test_4
+
+
+Processing file: ./C_repo/test_13.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_13.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_13.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_13.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_13
+Caused by: java.lang.ClassNotFoundException: Test_13
+
+
+Processing file: ./C_repo/test_15.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_15.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_15.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_15.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_gemma3:12b/Test_15.java:24: error: incompatible types: unexpected return value
+            return 1;
+                   ^
+./Java_repo_gemma3:12b/Test_15.java:30: error: incompatible types: unexpected return value
+        return 0;
+               ^
+2 errors
+
+
+Processing file: ./C_repo/test_19.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_19.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_19.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_19.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_gemma3:12b/Test_19.java:38: error: cannot find symbol
+        o.inner_data.inner_val = 123;
+                    ^
+  symbol:   variable inner_val
+  location: variable inner_data of type Outer
+./Java_repo_gemma3:12b/Test_19.java:39: error: incompatible types: String cannot be converted to char[]
+        o.name = "MyStruct";
+                 ^
+./Java_repo_gemma3:12b/Test_19.java:41: error: cannot find symbol
+        System.out.println("Inner: " + o.inner_data.inner_val);
+                                                   ^
+  symbol:   variable inner_val
+  location: variable inner_data of type Outer
+3 errors
+
+
+Processing file: ./C_repo/test_6.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_6.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_6.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_6.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_gemma3:12b/Test_6.java:7: error: incompatible types: int cannot be converted to boolean
+            if (error) {
+                ^
+1 error
+
+
+Processing file: ./C_repo/test_10.c
+  > Translating function 'createInt'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_10.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_10.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_10.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_10
+Caused by: java.lang.ClassNotFoundException: Test_10
+
+
+Processing file: ./C_repo/test_14.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_14.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_14.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_14.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_14
+Caused by: java.lang.ClassNotFoundException: Test_14
+
+
+Processing file: ./C_repo/test_7.c
+  > Translating function 'add'...
+  > Translating function 'subtract'...
+  > Translating function 'calculate'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_7.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_7.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_7.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_gemma3:12b/Test_7.java:17: error: cannot find symbol
+    public static int calculate(int a, int b, Function<Integer, Integer> operation) {
+                                              ^
+  symbol:   class Function
+  location: class Test_7
+./Java_repo_gemma3:12b/Test_7.java:23: error: reference to calculate is ambiguous
+        int result1 = calculate(10, 5, (x, y) -> x + y);
+                      ^
+  both method calculate(int,int,BiFunction<Integer,Integer,Integer>) in Test_7 and method calculate(int,int,<any>) in Test_7 match
+./Java_repo_gemma3:12b/Test_7.java:25: error: reference to calculate is ambiguous
+        int result2 = calculate(10, 5, (x, y) -> x - y);
+                      ^
+  both method calculate(int,int,BiFunction<Integer,Integer,Integer>) in Test_7 and method calculate(int,int,<any>) in Test_7 match
+3 errors
+
+
+Processing file: ./C_repo/test_1.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_1.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_1.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_1.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_1
+Caused by: java.lang.ClassNotFoundException: Test_1
+
+
+Processing file: ./C_repo/test_8.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_8.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_8.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_8.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_8
+Caused by: java.lang.ClassNotFoundException: Test_8
+
+
+Processing file: ./C_repo/test_11.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_gemma3:12b/Test_11.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_11.c
+  > Compiling and running translated Java: ./Java_repo_gemma3:12b/Test_11.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_11
+Caused by: java.lang.ClassNotFoundException: Test_11
+
+Pipeline finished.

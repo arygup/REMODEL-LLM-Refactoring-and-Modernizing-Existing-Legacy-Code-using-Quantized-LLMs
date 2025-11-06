@@ -1,0 +1,562 @@
+Logging run to: ./logs/2025-11-06_00-15-44
+Warning: Could not connect to Ollama. Is it running? Error: KeyError: 'name'
+Starting pipeline: ./C_repo -> ./Java_repo_dolphincoder:15b
+Output directory created/ensured at: ./Java_repo_dolphincoder:15b
+
+Processing file: ./C_repo/test_16.c
+  > Translating global variable...
+  > Translating function 'increment_global'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_16.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_16.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_16.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_16
+Caused by: java.lang.ClassNotFoundException: Test_16
+
+
+Processing file: ./C_repo/test_18.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_18.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_18.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_18.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_dolphincoder:15b/Test_18.java:23: error: <identifier> expected
+    Note: This Java class contains the exact same fields as the C struct, and it has the required constructors according to rule 3 above. The constructors are implemented as described in rule 3.2 and 3.3.
+        ^
+./Java_repo_dolphincoder:15b/Test_18.java:23: error: ';' expected
+    Note: This Java class contains the exact same fields as the C struct, and it has the required constructors according to rule 3 above. The constructors are implemented as described in rule 3.2 and 3.3.
+                   ^
+./Java_repo_dolphincoder:15b/Test_18.java:23: error: '{' expected
+    Note: This Java class contains the exact same fields as the C struct, and it has the required constructors according to rule 3 above. The constructors are implemented as described in rule 3.2 and 3.3.
+                                  ^
+./Java_repo_dolphincoder:15b/Test_18.java:32: error: reached end of file while parsing
+}
+ ^
+4 errors
+
+
+Processing file: ./C_repo/test_5.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_5.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_5.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_5.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_5
+Caused by: java.lang.ClassNotFoundException: Test_5
+
+
+Processing file: ./C_repo/test_17.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_17.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_17.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_17.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_17
+Caused by: java.lang.ClassNotFoundException: Test_17
+
+
+Processing file: ./C_repo/test_20.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_20.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_20.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_20.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_20
+Caused by: java.lang.ClassNotFoundException: Test_20
+
+
+Processing file: ./C_repo/test_9.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'printGeneric'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_9.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_9.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_9.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_dolphincoder:15b/Test_9.java:19: error: ';' expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                    ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: ';' expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                  ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: ';' expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                               ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: ';' expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                                            ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: ';' expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                                                   ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: ';' expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                                                                     ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: unclosed character literal
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                                                                          ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: ';' expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                                                                                                ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: ';' expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                                                                                                         ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: ';' expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                                                                                                                            ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: <identifier> expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                                                                                                                                                  ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: <identifier> expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                                                                                                                                                                      ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: ';' expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                                                                                                                                                                            ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: <identifier> expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                                                                                                                                                                                        ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: ';' expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                                                                                                                                                                                             ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: <identifier> expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                                                                                                                                                                                                 ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: ';' expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                                                                                                                                                                                                                   ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: ';' expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                                                                                                                                                                                                                               ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: ';' expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                                                                                                                                                                                                                                            ^
+./Java_repo_dolphincoder:15b/Test_9.java:19: error: '{' expected
+    This translation maintains the structure of the original C code while adhering to Java's encapsulation rules by using private fields and public accessors. The default constructor, copy constructor, and all-field constructor ensure that instances of this class can be created in a variety of ways. Bitfields can be added as needed via bit-masking and corresponding getter/setter methods.
+                                                                                                                                                                                                                                                                           ^
+./Java_repo_dolphincoder:15b/Test_9.java:58: error: reached end of file while parsing
+}
+ ^
+21 errors
+
+
+Processing file: ./C_repo/test_12.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_12.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_12.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_12.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_dolphincoder:15b/Test_12.java:4: error: cannot find symbol
+        Status s = Status.STOPPED;
+        ^
+  symbol:   class Status
+  location: class Test_12
+./Java_repo_dolphincoder:15b/Test_12.java:4: error: cannot find symbol
+        Status s = Status.STOPPED;
+                   ^
+  symbol:   variable Status
+  location: class Test_12
+./Java_repo_dolphincoder:15b/Test_12.java:6: error: cannot find symbol
+        if (s == Status.RUNNING) {
+                 ^
+  symbol:   variable Status
+  location: class Test_12
+3 errors
+
+
+Processing file: ./C_repo/test_2.c
+  > Translating struct...
+  > Translating function 'move'...
+  > Translating function 'move_copy'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_2.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_2.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_2.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_dolphincoder:15b/Test_2.java:35: error: method move_copy(Point) is already defined in class Test_2
+    public static void move_copy(Point p1) {
+                       ^
+./Java_repo_dolphincoder:15b/Test_2.java:42: error: method move(Point) is already defined in class Test_2
+    public static void move(Point p2) {
+                       ^
+./Java_repo_dolphincoder:15b/Test_2.java:39: error: cannot find symbol
+      printf("After move_copy: %d\n", p1.x); 
+      ^
+  symbol:   method printf(String,int)
+  location: class Test_2
+./Java_repo_dolphincoder:15b/Test_2.java:44: error: cannot find symbol
+      printf("After move: %d\n", p2.x); 
+      ^
+  symbol:   method printf(String,int)
+  location: class Test_2
+4 errors
+
+
+Processing file: ./C_repo/test_3.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_3.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_3.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_3.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_3
+Caused by: java.lang.ClassNotFoundException: Test_3
+
+
+Processing file: ./C_repo/test_4.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_4.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_4.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_4.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_4
+Caused by: java.lang.ClassNotFoundException: Test_4
+
+
+Processing file: ./C_repo/test_13.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_13.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_13.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_13.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_13
+Caused by: java.lang.ClassNotFoundException: Test_13
+
+
+Processing file: ./C_repo/test_15.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_15.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_15.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_15.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_dolphincoder:15b/Test_15.java:26: error: <identifier> expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+        ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                 ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                            ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                            ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: unclosed character literal
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                  ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: illegal character: '`'
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                              ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: illegal character: '`'
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                    ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                        ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                   ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                   ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: unclosed character literal
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                            ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                     ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                   ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                         ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                                 ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                                                      ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                                                                             ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                                                                                          ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                                                                                                     ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: <identifier> expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                                                                                                           ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                                                                                                              ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                                                                                                                        ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                                                                                                                                      ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                                                                                                                                              ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: unclosed character literal
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                                                                                                                                                    ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                                                                                                                                                                     ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: ';' expected
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                                                                                                                                                                               ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: illegal character: '`'
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                                                                                                                                                                                     ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: illegal character: '`'
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                                                                                                                                                                                            ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: illegal character: '`'
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                                                                                                                                                                                                   ^
+./Java_repo_dolphincoder:15b/Test_15.java:26: error: illegal character: '`'
+    Note: This is a standard translation and doesn't include any bitfields or `union` processing. If the input code contains either of these, it's not clear what the output should be as per the critical translation rules. Without knowing more details about such cases, I have made an assumption that it doesn't matter whether the input is a `struct` or a `union`. 
+                                                                                                                                                                                                                                                                                                                                                                         ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: illegal character: '`'
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+        ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: illegal character: '`'
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+              ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: ';' expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                            ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: <identifier> expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                 ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: ';' expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                     ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: illegal character: '`'
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                    ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: illegal character: '`'
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                           ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: unclosed character literal
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                               ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: ';' expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                             ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: ';' expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                                    ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: ';' expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                                              ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: <identifier> expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                                                ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: <identifier> expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                                                                   ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: '{' expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                                                                              ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: ';' expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                                                                                                                                                                                                              ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: <identifier> expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                                                                                                                                                                                                                    ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: <identifier> expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                                                                                                                                                                                                                          ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: ';' expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                                                                                                                                                                                                                                       ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: ';' expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                                                                                                                                                                                                                                                          ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: ';' expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                                                                                                                                                                                                                                                                            ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: ';' expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                                                                                                                                                                                                                                                                                       ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: ';' expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                                                                                                                                                                                                                                                                                                      ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: ';' expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                                                                                                                                                                                                                                                                                                                     ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: ';' expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                                                                                                                                                                                                                                                                                                                               ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: ';' expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                                                                                                                                                                                                                                                                                                                                                 ^
+./Java_repo_dolphincoder:15b/Test_15.java:28: error: ';' expected
+    For `union`, no text, no code, no comments. For `struct`, I've translated your C struct to a public static Java class with a default constructor, copy constructor and all-field constructor. The fields in this example are both primitive types (int and float), but if they were complex types, the translation would be similar - just replace each primitive type with the corresponding complex type.
+                                                                                                                                                                                                                                                                                                                                                                                                              ^
+./Java_repo_dolphincoder:15b/Test_15.java:44: error: reached end of file while parsing
+}
+ ^
+60 errors
+
+
+Processing file: ./C_repo/test_19.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_19.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_19.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_19.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_dolphincoder:15b/Test_19.java:38: error: class Inner is already defined in class Test_19
+    class Inner {    // Inner struct definition
+    ^
+./Java_repo_dolphincoder:15b/Test_19.java:42: error: class Outer is already defined in class Test_19
+    class Outer {   // Outer struct definition
+    ^
+./Java_repo_dolphincoder:15b/Test_19.java:31: error: incompatible types: String cannot be converted to char[]
+            o.name = "MyStruct";
+                     ^
+./Java_repo_dolphincoder:15b/Test_19.java:24: error: Illegal static declaration in inner class Test_19.Main
+        static public void main(String[] args) {
+                           ^
+  modifier 'static' is only allowed in constant variable declarations
+4 errors
+
+
+Processing file: ./C_repo/test_6.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_6.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_6.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_6.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_6
+Caused by: java.lang.ClassNotFoundException: Test_6
+
+
+Processing file: ./C_repo/test_10.c
+  > Translating function 'createInt'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_10.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_10.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_10.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_dolphincoder:15b/Test_10.java:7: error: ';' expected
+    public static void main(String[] args)
+                                          ^
+1 error
+
+
+Processing file: ./C_repo/test_14.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_14.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_14.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_14.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_14
+Caused by: java.lang.ClassNotFoundException: Test_14
+
+
+Processing file: ./C_repo/test_7.c
+  > Translating function 'add'...
+  > Translating function 'subtract'...
+  > Translating function 'calculate'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_7.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_7.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_7.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_dolphincoder:15b/Test_7.java:11: error: cannot find symbol
+    public static int calculate(int x, int y, IntBinaryOperator op) {
+                                              ^
+  symbol:   class IntBinaryOperator
+  location: class Test_7
+./Java_repo_dolphincoder:15b/Test_7.java:15: error: cannot find symbol
+    public static int calculate(int a, int b, Function<Integer, Integer> func) {
+                                              ^
+  symbol:   class Function
+  location: class Test_7
+./Java_repo_dolphincoder:15b/Test_7.java:20: error: method add(int,int) is already defined in class Test_7
+    public static int add(int a, int b) {
+                      ^
+./Java_repo_dolphincoder:15b/Test_7.java:25: error: method subtract(int,int) is already defined in class Test_7
+    public static int subtract(int a, int b) {
+                      ^
+./Java_repo_dolphincoder:15b/Test_7.java:30: error: cannot find symbol
+      Function<Integer, Integer> add_ptr = DolphinCoder::add;
+      ^
+  symbol:   class Function
+  location: class Test_7
+./Java_repo_dolphincoder:15b/Test_7.java:33: error: cannot find symbol
+      System.out.printf("Subtract: %d\n", calculate(10, 5, DolphinCoder::subtract));
+                                                           ^
+  symbol:   variable DolphinCoder
+  location: class Test_7
+6 errors
+
+
+Processing file: ./C_repo/test_1.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_1.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_1.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_1.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_1
+Caused by: java.lang.ClassNotFoundException: Test_1
+
+
+Processing file: ./C_repo/test_8.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_8.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_8.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_8.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_8
+Caused by: java.lang.ClassNotFoundException: Test_8
+
+
+Processing file: ./C_repo/test_11.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_dolphincoder:15b/Test_11.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_11.c
+  > Compiling and running translated Java: ./Java_repo_dolphincoder:15b/Test_11.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_11
+Caused by: java.lang.ClassNotFoundException: Test_11
+
+Pipeline finished.

@@ -1,0 +1,441 @@
+Logging run to: ./logs/2025-11-05_22-23-56
+Warning: Could not connect to Ollama. Is it running? Error: KeyError: 'name'
+Starting pipeline: ./C_repo -> ./Java_repo_starcoder2:15b
+Output directory created/ensured at: ./Java_repo_starcoder2:15b
+
+Processing file: ./C_repo/test_16.c
+  > Translating global variable...
+  > Translating function 'increment_global'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_16.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_16.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_16.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_starcoder2:15b/Test_16.java:3: error: ';' expected
+    You are expected to provide your translation in the following format (you should not change the format):
+           ^
+./Java_repo_starcoder2:15b/Test_16.java:3: error: ';' expected
+    You are expected to provide your translation in the following format (you should not change the format):
+                       ^
+./Java_repo_starcoder2:15b/Test_16.java:3: error: ';' expected
+    You are expected to provide your translation in the following format (you should not change the format):
+                                    ^
+./Java_repo_starcoder2:15b/Test_16.java:3: error: ';' expected
+    You are expected to provide your translation in the following format (you should not change the format):
+                                                   ^
+./Java_repo_starcoder2:15b/Test_16.java:3: error: ';' expected
+    You are expected to provide your translation in the following format (you should not change the format):
+                                                                 ^
+./Java_repo_starcoder2:15b/Test_16.java:3: error: invalid method declaration; return type required
+    You are expected to provide your translation in the following format (you should not change the format):
+                                                                  ^
+./Java_repo_starcoder2:15b/Test_16.java:3: error: ',', ')', or '[' expected
+    You are expected to provide your translation in the following format (you should not change the format):
+                                                                                    ^
+./Java_repo_starcoder2:15b/Test_16.java:4: error: > expected
+    Your Answer: <replace with answer>
+                         ^
+./Java_repo_starcoder2:15b/Test_16.java:4: error: '(' expected
+    Your Answer: <replace with answer>
+                                     ^
+9 errors
+
+
+Processing file: ./C_repo/test_18.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_18.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_18.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_18.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_starcoder2:15b/Test_18.java:5: error: illegal start of type
+    **HINTS (IF NEEDED):**
+    ^
+./Java_repo_starcoder2:15b/Test_18.java:5: error: invalid method declaration; return type required
+    **HINTS (IF NEEDED):**
+      ^
+./Java_repo_starcoder2:15b/Test_18.java:5: error: ';' expected
+    **HINTS (IF NEEDED):**
+                       ^
+./Java_repo_starcoder2:15b/Test_18.java:9: error: <identifier> expected
+         * For all 32-bit types (e.g., int, long, float), use `int` in Java. Do not use the Java type `Int`.
+                                          ^
+./Java_repo_starcoder2:15b/Test_18.java:9: error: <identifier> expected
+         * For all 32-bit types (e.g., int, long, float), use `int` in Java. Do not use the Java type `Int`.
+                                           ^
+./Java_repo_starcoder2:15b/Test_18.java:9: error: <identifier> expected
+         * For all 32-bit types (e.g., int, long, float), use `int` in Java. Do not use the Java type `Int`.
+                                                ^
+./Java_repo_starcoder2:15b/Test_18.java:9: error: <identifier> expected
+         * For all 32-bit types (e.g., int, long, float), use `int` in Java. Do not use the Java type `Int`.
+                                                 ^
+./Java_repo_starcoder2:15b/Test_18.java:9: error: <identifier> expected
+         * For all 32-bit types (e.g., int, long, float), use `int` in Java. Do not use the Java type `Int`.
+                                                       ^
+./Java_repo_starcoder2:15b/Test_18.java:9: error: illegal character: '`'
+         * For all 32-bit types (e.g., int, long, float), use `int` in Java. Do not use the Java type `Int`.
+                                                              ^
+./Java_repo_starcoder2:15b/Test_18.java:9: error: illegal character: '`'
+         * For all 32-bit types (e.g., int, long, float), use `int` in Java. Do not use the Java type `Int`.
+                                                                  ^
+./Java_repo_starcoder2:15b/Test_18.java:9: error: ';' expected
+         * For all 32-bit types (e.g., int, long, float), use `int` in Java. Do not use the Java type `Int`.
+                                                                           ^
+./Java_repo_starcoder2:15b/Test_18.java:9: error: ';' expected
+         * For all 32-bit types (e.g., int, long, float), use `int` in Java. Do not use the Java type `Int`.
+                                                                                   ^
+./Java_repo_starcoder2:15b/Test_18.java:9: error: ';' expected
+         * For all 32-bit types (e.g., int, long, float), use `int` in Java. Do not use the Java type `Int`.
+                                                                                           ^
+./Java_repo_starcoder2:15b/Test_18.java:9: error: illegal character: '`'
+         * For all 32-bit types (e.g., int, long, float), use `int` in Java. Do not use the Java type `Int`.
+                                                                                                      ^
+./Java_repo_starcoder2:15b/Test_18.java:9: error: illegal character: '`'
+         * For all 32-bit types (e.g., int, long, float), use `int` in Java. Do not use the Java type `Int`.
+                                                                                                          ^
+./Java_repo_starcoder2:15b/Test_18.java:10: error: ';' expected
+         * If a C function uses a constant string literal (e.g., "hello"), use the same exact string in Java.
+               ^
+./Java_repo_starcoder2:15b/Test_18.java:10: error: ';' expected
+         * If a C function uses a constant string literal (e.g., "hello"), use the same exact string in Java.
+                          ^
+./Java_repo_starcoder2:15b/Test_18.java:10: error: ';' expected
+         * If a C function uses a constant string literal (e.g., "hello"), use the same exact string in Java.
+                                 ^
+./Java_repo_starcoder2:15b/Test_18.java:10: error: ';' expected
+         * If a C function uses a constant string literal (e.g., "hello"), use the same exact string in Java.
+                                                 ^
+./Java_repo_starcoder2:15b/Test_18.java:10: error: invalid method declaration; return type required
+         * If a C function uses a constant string literal (e.g., "hello"), use the same exact string in Java.
+                                                  ^
+./Java_repo_starcoder2:15b/Test_18.java:10: error: <identifier> expected
+         * If a C function uses a constant string literal (e.g., "hello"), use the same exact string in Java.
+                                                               ^
+./Java_repo_starcoder2:15b/Test_18.java:10: error: illegal start of type
+         * If a C function uses a constant string literal (e.g., "hello"), use the same exact string in Java.
+                                                                 ^
+22 errors
+
+
+Processing file: ./C_repo/test_5.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_5.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_5.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_5.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_5
+Caused by: java.lang.ClassNotFoundException: Test_5
+
+
+Processing file: ./C_repo/test_17.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_17.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_17.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_17.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_17
+Caused by: java.lang.ClassNotFoundException: Test_17
+
+
+Processing file: ./C_repo/test_20.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_20.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_20.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_20.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_20
+Caused by: java.lang.ClassNotFoundException: Test_20
+
+
+Processing file: ./C_repo/test_9.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'printGeneric'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_9.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_9.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_9.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_9
+Caused by: java.lang.ClassNotFoundException: Test_9
+
+
+Processing file: ./C_repo/test_12.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_12.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_12.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_12.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_12
+Caused by: java.lang.ClassNotFoundException: Test_12
+
+
+Processing file: ./C_repo/test_2.c
+  > Translating struct...
+  > Translating function 'move'...
+  > Translating function 'move_copy'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_2.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_2.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_2.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_starcoder2:15b/Test_2.java:5: error: cannot find symbol
+    public static void move(Point p) {
+                            ^
+  symbol:   class Point
+  location: class Test_2
+1 error
+
+
+Processing file: ./C_repo/test_3.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_3.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_3.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_3.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_3
+Caused by: java.lang.ClassNotFoundException: Test_3
+
+
+Processing file: ./C_repo/test_4.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_4.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_4.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_4.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_starcoder2:15b/Test_4.java:3: error: illegal start of type
+    **TRANSLATION GUIDANCE (YOU DO NOT HAVE TO FOLLOW THESE):**
+    ^
+./Java_repo_starcoder2:15b/Test_4.java:3: error: ',', ')', or '[' expected
+    **TRANSLATION GUIDANCE (YOU DO NOT HAVE TO FOLLOW THESE):**
+                                  ^
+./Java_repo_starcoder2:15b/Test_4.java:10: error: unclosed character literal
+        2.  C's `&&` and `||` must be replaced with Java's `&` and `|`.
+             ^
+./Java_repo_starcoder2:15b/Test_4.java:10: error: illegal character: '`'
+        2.  C's `&&` and `||` must be replaced with Java's `&` and `|`.
+                ^
+./Java_repo_starcoder2:15b/Test_4.java:10: error: illegal character: '`'
+        2.  C's `&&` and `||` must be replaced with Java's `&` and `|`.
+                   ^
+./Java_repo_starcoder2:15b/Test_4.java:10: error: illegal character: '`'
+        2.  C's `&&` and `||` must be replaced with Java's `&` and `|`.
+                         ^
+./Java_repo_starcoder2:15b/Test_4.java:10: error: illegal character: '`'
+        2.  C's `&&` and `||` must be replaced with Java's `&` and `|`.
+                            ^
+./Java_repo_starcoder2:15b/Test_4.java:10: error: unclosed character literal
+        2.  C's `&&` and `||` must be replaced with Java's `&` and `|`.
+                                                        ^
+./Java_repo_starcoder2:15b/Test_4.java:10: error: illegal character: '`'
+        2.  C's `&&` and `||` must be replaced with Java's `&` and `|`.
+                                                           ^
+./Java_repo_starcoder2:15b/Test_4.java:10: error: illegal character: '`'
+        2.  C's `&&` and `||` must be replaced with Java's `&` and `|`.
+                                                             ^
+./Java_repo_starcoder2:15b/Test_4.java:10: error: illegal character: '`'
+        2.  C's `&&` and `||` must be replaced with Java's `&` and `|`.
+                                                                   ^
+./Java_repo_starcoder2:15b/Test_4.java:10: error: illegal character: '`'
+        2.  C's `&&` and `||` must be replaced with Java's `&` and `|`.
+                                                                     ^
+./Java_repo_starcoder2:15b/Test_4.java:11: error: illegal character: '`'
+        3.  Replace any C bitwise operators (`&`, `|`, `^`) with Java's corresponding operators (e.g., `&`).
+                                             ^
+./Java_repo_starcoder2:15b/Test_4.java:11: error: illegal character: '`'
+        3.  Replace any C bitwise operators (`&`, `|`, `^`) with Java's corresponding operators (e.g., `&`).
+                                               ^
+./Java_repo_starcoder2:15b/Test_4.java:11: error: illegal character: '`'
+        3.  Replace any C bitwise operators (`&`, `|`, `^`) with Java's corresponding operators (e.g., `&`).
+                                                  ^
+./Java_repo_starcoder2:15b/Test_4.java:11: error: illegal character: '`'
+        3.  Replace any C bitwise operators (`&`, `|`, `^`) with Java's corresponding operators (e.g., `&`).
+                                                    ^
+./Java_repo_starcoder2:15b/Test_4.java:11: error: illegal character: '`'
+        3.  Replace any C bitwise operators (`&`, `|`, `^`) with Java's corresponding operators (e.g., `&`).
+                                                       ^
+./Java_repo_starcoder2:15b/Test_4.java:11: error: illegal character: '`'
+        3.  Replace any C bitwise operators (`&`, `|`, `^`) with Java's corresponding operators (e.g., `&`).
+                                                         ^
+./Java_repo_starcoder2:15b/Test_4.java:11: error: unclosed character literal
+        3.  Replace any C bitwise operators (`&`, `|`, `^`) with Java's corresponding operators (e.g., `&`).
+                                                                     ^
+./Java_repo_starcoder2:15b/Test_4.java:11: error: illegal character: '`'
+        3.  Replace any C bitwise operators (`&`, `|`, `^`) with Java's corresponding operators (e.g., `&`).
+                                                                                                       ^
+./Java_repo_starcoder2:15b/Test_4.java:11: error: illegal character: '`'
+        3.  Replace any C bitwise operators (`&`, `|`, `^`) with Java's corresponding operators (e.g., `&`).
+                                                                                                         ^
+./Java_repo_starcoder2:15b/Test_4.java:15: error: illegal character: '`'
+            * Type names must be fully-qualified and prepended with `com.yourcompany`.
+                                                                    ^
+./Java_repo_starcoder2:15b/Test_4.java:15: error: illegal character: '`'
+            * Type names must be fully-qualified and prepended with `com.yourcompany`.
+                                                                                    ^
+23 errors
+
+
+Processing file: ./C_repo/test_13.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_13.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_13.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_13.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_13
+Caused by: java.lang.ClassNotFoundException: Test_13
+
+
+Processing file: ./C_repo/test_15.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_15.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_15.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_15.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_15
+Caused by: java.lang.ClassNotFoundException: Test_15
+
+
+Processing file: ./C_repo/test_19.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_19.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_19.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_19.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_starcoder2:15b/Test_19.java:3: error: ';' expected
+    struct Outer
+                ^
+./Java_repo_starcoder2:15b/Test_19.java:5: error: ';' expected
+       struct Inner inner1; /* This is a struct defined inside another struct */
+                   ^
+./Java_repo_starcoder2:15b/Test_19.java:5: error: not a statement
+       struct Inner inner1; /* This is a struct defined inside another struct */
+                    ^
+./Java_repo_starcoder2:15b/Test_19.java:6: error: ';' expected
+       struct Inner *inner2; /* This is a pointer to a struct defined inside another struct */
+                   ^
+./Java_repo_starcoder2:15b/Test_19.java:6: error: not a statement
+       struct Inner *inner2; /* This is a pointer to a struct defined inside another struct */
+                     ^
+./Java_repo_starcoder2:15b/Test_19.java:7: error: ']' expected
+       char name[50];  // 49 bytes + \0 = 50 bytes
+                 ^
+./Java_repo_starcoder2:15b/Test_19.java:8: error: not a statement
+       char *desc;   /* This is a pointer */
+       ^
+./Java_repo_starcoder2:15b/Test_19.java:8: error: ';' expected
+       char *desc;   /* This is a pointer */
+           ^
+./Java_repo_starcoder2:15b/Test_19.java:8: error: not a statement
+       char *desc;   /* This is a pointer */
+             ^
+9 errors
+
+
+Processing file: ./C_repo/test_6.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_6.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_6.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_6.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_6
+Caused by: java.lang.ClassNotFoundException: Test_6
+
+
+Processing file: ./C_repo/test_10.c
+  > Translating function 'createInt'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_10.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_10.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_10.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_10
+Caused by: java.lang.ClassNotFoundException: Test_10
+
+
+Processing file: ./C_repo/test_14.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_14.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_14.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_14.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_14
+Caused by: java.lang.ClassNotFoundException: Test_14
+
+
+Processing file: ./C_repo/test_7.c
+  > Translating function 'add'...
+  > Translating function 'subtract'...
+  > Translating function 'calculate'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_7.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_7.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_7.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_starcoder2:15b/Test_7.java:8: error: cannot find symbol
+            printf("subtract(%d, %d): %d\n", 345, 123, subtract(345, 123)); 
+            ^
+  symbol:   method printf(String,int,int,int)
+  location: class Test_7
+./Java_repo_starcoder2:15b/Test_7.java:9: error: cannot find symbol
+            printf("subtract(%d, %d): %d\n", -123, 456, subtract(-123, 456));
+            ^
+  symbol:   method printf(String,int,int,int)
+  location: class Test_7
+2 errors
+
+
+Processing file: ./C_repo/test_1.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_1.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_1.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_1.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_1
+Caused by: java.lang.ClassNotFoundException: Test_1
+
+
+Processing file: ./C_repo/test_8.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_8.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_8.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_8.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_8
+Caused by: java.lang.ClassNotFoundException: Test_8
+
+
+Processing file: ./C_repo/test_11.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_starcoder2:15b/Test_11.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_11.c
+  > Compiling and running translated Java: ./Java_repo_starcoder2:15b/Test_11.java
+  > Java FAILED: Java Execution Failed: Error: Could not find or load main class Test_11
+Caused by: java.lang.ClassNotFoundException: Test_11
+
+Pipeline finished.
+

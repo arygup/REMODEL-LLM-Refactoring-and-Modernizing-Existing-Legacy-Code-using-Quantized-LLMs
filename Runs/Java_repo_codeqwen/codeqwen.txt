@@ -1,0 +1,405 @@
+Logging run to: ./logs/2025-11-05_23-16-15
+Warning: Could not connect to Ollama. Is it running? Error: KeyError: 'name'
+Starting pipeline: ./C_repo -> ./Java_repo_codeqwen
+Output directory created/ensured at: ./Java_repo_codeqwen
+
+Processing file: ./C_repo/test_16.c
+  > Translating global variable...
+  > Translating function 'increment_global'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_16.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_16.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_16.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codeqwen/Test_16.java:6: error: cannot assign a value to final variable g_counter
+      g_counter += 5;
+      ^
+./Java_repo_codeqwen/Test_16.java:13: error: cannot assign a value to final variable g_counter
+            g_counter = 1;
+            ^
+2 errors
+
+
+Processing file: ./C_repo/test_18.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_18.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_18.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_18.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codeqwen/Test_18.java:28: error: cannot find symbol
+      System.out.printf("Size of Data: %lu\n", (long)(Data.SIZE));
+                                                          ^
+  symbol:   variable SIZE
+  location: class Data
+./Java_repo_codeqwen/Test_18.java:28: error: illegal parenthesized expression
+      System.out.printf("Size of Data: %lu\n", (long)(Data.SIZE));
+                                                     ^
+2 errors
+
+
+Processing file: ./C_repo/test_5.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_5.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_5.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_5.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_17.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_17.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_17.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_17.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_20.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_20.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_20.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_20.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_9.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'printGeneric'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_9.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_9.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_9.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_12.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_12.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_12.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_12.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codeqwen/Test_12.java:4: error: cannot find symbol
+      Status s = Status.STOPPED;
+      ^
+  symbol:   class Status
+  location: class Test_12
+./Java_repo_codeqwen/Test_12.java:4: error: cannot find symbol
+      Status s = Status.STOPPED;
+                 ^
+  symbol:   variable Status
+  location: class Test_12
+./Java_repo_codeqwen/Test_12.java:5: error: cannot find symbol
+      s = Status.values()[(s.ordinal() + 1) % Status.values().length];
+          ^
+  symbol:   variable Status
+  location: class Test_12
+./Java_repo_codeqwen/Test_12.java:5: error: cannot find symbol
+      s = Status.values()[(s.ordinal() + 1) % Status.values().length];
+                                              ^
+  symbol:   variable Status
+  location: class Test_12
+./Java_repo_codeqwen/Test_12.java:6: error: cannot find symbol
+      if (s == Status.RUNNING) {
+               ^
+  symbol:   variable Status
+  location: class Test_12
+5 errors
+
+
+Processing file: ./C_repo/test_2.c
+  > Translating struct...
+  > Translating function 'move'...
+  > Translating function 'move_copy'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_2.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_2.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_2.java
+  > Comparing outputs...
+  > FAILURE: Outputs do not match.
+--- C Output ---
+Original: 10
+Inside move_copy: 110
+After move_copy: 10
+After move: 15
+
+--- Java Output ---
+Original: 10
+After move_copy: 10
+After move: 15
+
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_3.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_3.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_3.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_3.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codeqwen/Test_3.java:4: error: cannot find symbol
+            Converter c_val = new Converter();
+            ^
+  symbol:   class Converter
+  location: class Test_3
+./Java_repo_codeqwen/Test_3.java:4: error: cannot find symbol
+            Converter c_val = new Converter();
+                                  ^
+  symbol:   class Converter
+  location: class Test_3
+2 errors
+
+
+Processing file: ./C_repo/test_4.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_4.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_4.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_4.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_13.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_13.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_13.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_13.java
+  > Comparing outputs...
+  > FAILURE: Outputs do not match.
+--- C Output ---
+i = 0
+i = 1
+i = 2
+i = 3
+i = 4
+Loop finished.
+
+--- Java Output ---
+i = 0
+Loop finished.
+
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_15.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_15.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_15.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_15.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_19.c
+  > Translating struct...
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_19.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_19.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_19.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codeqwen/Test_19.java:24: error: cannot find symbol
+                return (_A & 1) != 0;
+                        ^
+  symbol:   variable _A
+  location: class Inner
+./Java_repo_codeqwen/Test_19.java:28: error: cannot find symbol
+                _A = (A ? 1 : 0);
+                ^
+  symbol:   variable _A
+  location: class Inner
+./Java_repo_codeqwen/Test_19.java:38: error: cannot find symbol
+        o_orig.inner_data = new Inner(123);
+              ^
+  symbol:   variable inner_data
+  location: variable o_orig of type Outer
+./Java_repo_codeqwen/Test_19.java:39: error: cannot find symbol
+        strcpy(o_orig.name, "MyStruct");
+        ^
+  symbol:   method strcpy(char[],String)
+  location: class Test_19
+./Java_repo_codeqwen/Test_19.java:41: error: cannot find symbol
+        System.out.printf("Inner: %d\n", o_orig.inner_data.inner_val);
+                                               ^
+  symbol:   variable inner_data
+  location: variable o_orig of type Outer
+5 errors
+
+
+Processing file: ./C_repo/test_6.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_6.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_6.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_6.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_10.c
+  > Translating function 'createInt'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_10.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_10.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_10.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codeqwen/Test_10.java:4: error: cannot find symbol
+      p[0] = (int) malloc(4);
+                   ^
+  symbol:   method malloc(int)
+  location: class Test_10
+./Java_repo_codeqwen/Test_10.java:10: error: cannot find symbol
+      createInt(MyIntPtr);
+                ^
+  symbol:   variable MyIntPtr
+  location: class Test_10
+./Java_repo_codeqwen/Test_10.java:11: error: cannot find symbol
+      if (MyIntPtr != 0) {
+          ^
+  symbol:   variable MyIntPtr
+  location: class Test_10
+./Java_repo_codeqwen/Test_10.java:12: error: cannot find symbol
+        System.out.printf("Value from out-param: %d\n", MyIntPtr);
+                                                        ^
+  symbol:   variable MyIntPtr
+  location: class Test_10
+./Java_repo_codeqwen/Test_10.java:13: error: cannot find symbol
+        free(MyIntPtr);
+             ^
+  symbol:   variable MyIntPtr
+  location: class Test_10
+5 errors
+
+
+Processing file: ./C_repo/test_14.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_14.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_14.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_14.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codeqwen/Test_14.java:6: error: cannot find symbol
+        strcpy(dest, "Hello ");
+        ^
+  symbol:   method strcpy(char[],String)
+  location: class Test_14
+./Java_repo_codeqwen/Test_14.java:7: error: cannot find symbol
+        strcat(dest, src);
+        ^
+  symbol:   method strcat(char[],String)
+  location: class Test_14
+./Java_repo_codeqwen/Test_14.java:9: error: cannot find symbol
+        System.out.println("Length: " + strlen(dest));
+                                        ^
+  symbol:   method strlen(char[])
+  location: class Test_14
+3 errors
+
+
+Processing file: ./C_repo/test_7.c
+  > Translating function 'add'...
+  > Translating function 'subtract'...
+  > Translating function 'calculate'...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_7.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_7.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_7.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codeqwen/Test_7.java:23: error: not a statement
+           int(*add_ptr)(int, int) = add;
+           ^
+./Java_repo_codeqwen/Test_7.java:23: error: ';' expected
+           int(*add_ptr)(int, int) = add;
+              ^
+./Java_repo_codeqwen/Test_7.java:23: error: not a statement
+           int(*add_ptr)(int, int) = add;
+                ^
+./Java_repo_codeqwen/Test_7.java:23: error: ';' expected
+           int(*add_ptr)(int, int) = add;
+                       ^
+./Java_repo_codeqwen/Test_7.java:23: error: not a statement
+           int(*add_ptr)(int, int) = add;
+                         ^
+./Java_repo_codeqwen/Test_7.java:23: error: ';' expected
+           int(*add_ptr)(int, int) = add;
+                            ^
+./Java_repo_codeqwen/Test_7.java:23: error: not a statement
+           int(*add_ptr)(int, int) = add;
+                              ^
+./Java_repo_codeqwen/Test_7.java:23: error: ';' expected
+           int(*add_ptr)(int, int) = add;
+                                 ^
+./Java_repo_codeqwen/Test_7.java:23: error: not a statement
+           int(*add_ptr)(int, int) = add;
+                                     ^
+9 errors
+
+
+Processing file: ./C_repo/test_1.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_1.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_1.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_1.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+
+Processing file: ./C_repo/test_8.c
+  > Translating struct...
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_8.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_8.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_8.java
+  > Java FAILED: Java Compilation Failed: ./Java_repo_codeqwen/Test_8.java:37: error: non-static variable this cannot be referenced from a static context
+        Flags f_val = new Flags();
+                      ^
+./Java_repo_codeqwen/Test_8.java:38: error: cannot find symbol
+        f_val.a = 1;
+             ^
+  symbol:   variable a
+  location: variable f_val of type Test_8.Flags
+2 errors
+
+
+Processing file: ./C_repo/test_11.c
+  > Translating function 'main'...
+Successfully saved Java code to ./Java_repo_codeqwen/Test_11.java
+
+--- Verification Stage ---
+  > Compiling and running C baseline: ./C_repo/test_11.c
+  > Compiling and running translated Java: ./Java_repo_codeqwen/Test_11.java
+  > Comparing outputs...
+  > SUCCESS: Outputs match!
+--- Verification Finished ---
+Pipeline finished.

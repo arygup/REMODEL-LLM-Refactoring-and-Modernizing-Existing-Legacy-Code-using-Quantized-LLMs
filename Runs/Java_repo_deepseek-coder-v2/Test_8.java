@@ -1,5 +1,4 @@
 public class Test_8 {
-
     public static class Flags {
         private int a;
         private int b;
@@ -57,3 +56,5 @@ public class Test_8 {
     }
 
 }
+
+

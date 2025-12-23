@@ -1,5 +1,7 @@
 # REMODEL-LLM: Refactoring and Modernizing Existing Legacy Code using Quantized LLMs
 
+## Preprint:  https://doi.org/10.13140/RG.2.2.15123.54564
+
 ## Overview
 
 **REMODEL-LLM** is a research grade system that performs **automated refactoring, translation, and modernization of legacy codebases** using **quantized large language models (LLMs)** combined with **static program analysis**.
@@ -147,7 +149,7 @@ If you use this framework in your research, please cite:
 
 ```
 @inproceedings{gupta2025remodel,
-  title={REMODEL-LLM: Refactoring and Modernizing Existing Legacy Code using Quantized LLMs},
+  title={REMODEL-LLM: Transforming C code to Java using LLMs},
   author={Gupta, Aryan and Reddy, Y. Raghu},
   institution={IIIT Hyderabad},
   year={2025}
